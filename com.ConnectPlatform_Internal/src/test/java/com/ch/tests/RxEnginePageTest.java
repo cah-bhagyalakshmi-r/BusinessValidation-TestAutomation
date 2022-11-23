@@ -17,7 +17,7 @@ import com.ch.pages.LoginPage;
 import com.ch.pages.RxRulesEnginePage;
 import com.ch.util.CommonMethods;
 
-public class RxRulesEnginePageTest extends TestBase {
+public class RxEnginePageTest extends TestBase {
 
 	LoginPage loginPage;
 	DashboardPage dashboardPage;
@@ -27,7 +27,7 @@ public class RxRulesEnginePageTest extends TestBase {
 	int defaultwaittime=35;
 	int normalwaittime=5;
 
-	public RxRulesEnginePageTest(){
+	public RxEnginePageTest(){
 		super();			
 	}
 

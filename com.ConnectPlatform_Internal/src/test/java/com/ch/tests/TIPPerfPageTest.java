@@ -14,7 +14,7 @@ import com.ch.pages.LoginPage;
 import com.ch.pages.TIPPerformancePage;
 import com.ch.util.CommonMethods;
 
-public class TIPPerformancePageTest extends TestBase {
+public class TIPPerfPageTest extends TestBase {
 
 	LoginPage loginPage;
 	DashboardPage dashboardPage;
@@ -27,7 +27,7 @@ public class TIPPerformancePageTest extends TestBase {
 	int defaultwaittime = 35;
 	int normalwaittime = 5;
 
-	public TIPPerformancePageTest() {
+	public TIPPerfPageTest() {
 		super();
 	}
 

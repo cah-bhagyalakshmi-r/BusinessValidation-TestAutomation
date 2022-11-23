@@ -16,7 +16,7 @@ import com.ch.pages.MedicalRulesEnginePage;
 import com.ch.pages.TIPPerformancePage;
 import com.ch.util.CommonMethods;
 
-public class MedicalRulesEnginePageTest extends TestBase {
+public class MedEnginePageTest extends TestBase {
 
 	LoginPage loginPage;
 	DashboardPage dashboardPage;
@@ -26,7 +26,7 @@ public class MedicalRulesEnginePageTest extends TestBase {
 	int defaultwaittime=25;
 	int normalwaittime=5;
 
-	public MedicalRulesEnginePageTest(){
+	public MedEnginePageTest(){
 		super();			
 	}
 	

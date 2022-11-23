@@ -8,51 +8,51 @@ import org.json.simple.parser.ParseException;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
 import com.ch.base.TestBase;
-import com.ch.pages.CMRtargetedmembersPage;
 import com.ch.pages.DashboardPage;
 import com.ch.pages.LoginPage;
+import com.ch.pages.ReasoncodeTIPconfigurationPage;
+import com.ch.pages.TIPPerformancePage;
 import com.ch.util.CommonMethods;
 
-public class CMRtargetedmembersPageTest extends TestBase {
+public class ReasoncodePageTest extends TestBase {
 
 	LoginPage loginPage;
 	DashboardPage dashboardPage;
-	CMRtargetedmembersPage cmrtargetedmembersPage;
+	ReasoncodeTIPconfigurationPage reasoncodeTIPconfigurationPage;
 	CommonMethods commonMethods;
 
 	XSSFWorkbook wb = null;
 	XSSFSheet sh = null;
 
-	int defaultwaittime=35;
+	int defaultwaittime=15;
 	int normalwaittime=5;
 
-	public CMRtargetedmembersPageTest(){
+	public ReasoncodePageTest(){
 		super();			
 	}
 
 	@BeforeMethod(alwaysRun = true)
 	public void setUp() throws InterruptedException, IOException, ParseException {		
 		internalinitialization();
-		cmrtargetedmembersPage = new CMRtargetedmembersPage();
+		reasoncodeTIPconfigurationPage = new ReasoncodeTIPconfigurationPage();
 		loginPage = new LoginPage();
 		commonMethods = new CommonMethods();
 		dashboardPage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 	}
-
-	@Test(description = "Verify cmr targeted members Report download to excel", priority = 2, groups = { "Sanity", "Regression" })
-	public void cmrtargetedmembersdownloadexcel_validation() throws IOException, InterruptedException, ParseException {
+	
+	@Test(description = "Reason code Tip configuration view Validation", priority =2, groups = {"Regression"})
+	public void reasoncodeview_Validation() throws IOException, InterruptedException, ParseException
+	{	
 		commonMethods.implicitwait(defaultwaittime);
-		cmrtargetedmembersPage.cmrtargetedmembers_click();
+		reasoncodeTIPconfigurationPage.reasoncodetipconfiguration_click();
 		commonMethods.implicitwait(defaultwaittime);
-		cmrtargetedmembersPage.cmrtargetedmembersfields_display();
+		reasoncodeTIPconfigurationPage.reasoncode_fieldvalidation();
 		commonMethods.implicitwait(defaultwaittime);
-		cmrtargetedmembersPage.downloadtoexcel_click();
+		reasoncodeTIPconfigurationPage.firstrec_click();
 		commonMethods.implicitwait(defaultwaittime);
-		cmrtargetedmembersPage.getRecordsCountInCSV_exporttoexcel();
-		commonMethods.implicitwait(defaultwaittime);
-		cmrtargetedmembersPage.delete_file();
+		reasoncodeTIPconfigurationPage.reasoncode_view();
+		System.out.println("Reason code was clicked and the fields are viewed");
 		commonMethods.implicitwait(defaultwaittime);		
 	}
 

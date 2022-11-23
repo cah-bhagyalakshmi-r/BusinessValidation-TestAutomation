@@ -14,7 +14,7 @@ import com.ch.util.CommonMethods;
 
 import junit.framework.Assert;
 
-public class AdherencePDCRulesPageTest extends TestBase {
+public class AdhPDCPageTest extends TestBase {
 
 	LoginPage loginPage;
 	DashboardPage dashboardPage;
@@ -24,7 +24,7 @@ public class AdherencePDCRulesPageTest extends TestBase {
 	int defaultwaittime=35;
 	int normalwaittime=5;
 
-	public AdherencePDCRulesPageTest(){
+	public AdhPDCPageTest(){
 		super();			
 	}
 

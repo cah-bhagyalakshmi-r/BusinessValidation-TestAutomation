@@ -9,7 +9,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import com.ch.base.TestBase;
 import com.ch.pages.DashboardPage;
-import com.ch.pages.DxRulesEnginePage;
+import com.ch.pages.DxEngPage;
 import com.ch.pages.LoginPage;
 import com.ch.util.CommonMethods;
 
@@ -19,7 +19,7 @@ public class DxEngPageTest extends TestBase {
 
 	LoginPage loginPage;
 	DashboardPage dashboardPage;
-	DxRulesEnginePage dxrulesenginePage;
+	DxEngPage dxrulesenginePage;
 	CommonMethods commonMethods;
 
 	int defaultwaittime=35;
@@ -33,7 +33,7 @@ public class DxEngPageTest extends TestBase {
 	public void dxrulesengine_addrule_Validation() throws IOException, InterruptedException, ParseException
 	{	
 		internalinitialization();
-		dxrulesenginePage = new DxRulesEnginePage();
+		dxrulesenginePage = new DxEngPage();
 		loginPage = new LoginPage();
 		commonMethods = new CommonMethods(); 
 		dashboardPage =loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
@@ -73,7 +73,7 @@ public class DxEngPageTest extends TestBase {
 	public void dxrulesengine_editrule_Validation() throws IOException, InterruptedException, ParseException
 	{	
 		internalinitialization();
-		dxrulesenginePage = new DxRulesEnginePage();
+		dxrulesenginePage = new DxEngPage();
 		loginPage = new LoginPage();
 		commonMethods = new CommonMethods(); 
 		dashboardPage =loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
@@ -121,7 +121,7 @@ public class DxEngPageTest extends TestBase {
 	public void dxrulesengine_exportindividualrule_Validation() throws IOException, InterruptedException, ParseException
 	{	
 		internalinitialization();
-		dxrulesenginePage = new DxRulesEnginePage();
+		dxrulesenginePage = new DxEngPage();
 		loginPage = new LoginPage();
 		commonMethods = new CommonMethods(); 
 		dashboardPage =loginPage.login(prop.getProperty("username"), prop.getProperty("password"));

@@ -28,7 +28,7 @@ import com.ch.util.CommonMethods;
 
 import junit.framework.Assert;
 
-public class MedicalRulesEnginePage extends TestBase {
+public class MedEngPage extends TestBase {
 
 	@FindBy(xpath = "//a[contains(text(),'Medical Rules Engine')]")
 	WebElement medicalrulesengine;
@@ -163,7 +163,7 @@ public class MedicalRulesEnginePage extends TestBase {
 	
 	CommonMethods commonMethods;
 
-	public MedicalRulesEnginePage() {
+	public MedEngPage() {
 		PageFactory.initElements(driver, this);
 		commonMethods = new CommonMethods();
 	}

@@ -14,9 +14,9 @@ import org.testng.annotations.Test;
 import com.ch.base.TestBase;
 import com.ch.pages.DashboardPage;
 import com.ch.pages.LoginPage;
-import com.ch.pages.ReasoncodeTIPconfigurationPage;
-import com.ch.pages.RefusalreasonPage;
-import com.ch.pages.TIPPerformancePage;
+import com.ch.pages.RsncodePage;
+import com.ch.pages.RefusalrsnPage;
+import com.ch.pages.TIPPerfPage;
 import com.ch.util.CommonMethods;
 
 import junit.framework.Assert;
@@ -25,7 +25,7 @@ public class RefusalPageTest extends TestBase {
 
 	LoginPage loginPage;
 	DashboardPage dashboardPage;
-	RefusalreasonPage refusalreasonPage;
+	RefusalrsnPage refusalreasonPage;
 	CommonMethods commonMethods;
 
 	int defaultwaittime=15;
@@ -38,7 +38,7 @@ public class RefusalPageTest extends TestBase {
 	@BeforeMethod(alwaysRun = true)
 	public void setUp() throws InterruptedException, IOException, ParseException {		
 		internalinitialization();
-		refusalreasonPage = new RefusalreasonPage();
+		refusalreasonPage = new RefusalrsnPage();
 		loginPage = new LoginPage();
 		commonMethods = new CommonMethods();
 		dashboardPage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));

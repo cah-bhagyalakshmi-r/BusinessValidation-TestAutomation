@@ -11,14 +11,14 @@ import org.testng.annotations.Test;
 import com.ch.base.TestBase;
 import com.ch.pages.DashboardPage;
 import com.ch.pages.LoginPage;
-import com.ch.pages.TIPPerformancePage;
+import com.ch.pages.TIPPerfPage;
 import com.ch.util.CommonMethods;
 
 public class TIPPerfPageTest extends TestBase {
 
 	LoginPage loginPage;
 	DashboardPage dashboardPage;
-	TIPPerformancePage tipperformancePage;
+	TIPPerfPage tipperformancePage;
 	CommonMethods commonMethods;
 
 	XSSFWorkbook wb = null;
@@ -34,7 +34,7 @@ public class TIPPerfPageTest extends TestBase {
 	@BeforeMethod(alwaysRun = true)
 	public void setUp() throws InterruptedException, IOException, ParseException {
 		internalinitialization();
-		tipperformancePage = new TIPPerformancePage();
+		tipperformancePage = new TIPPerfPage();
 		loginPage = new LoginPage();
 		commonMethods = new CommonMethods();
 		dashboardPage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));

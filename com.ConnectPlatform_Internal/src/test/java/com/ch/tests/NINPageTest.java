@@ -14,8 +14,8 @@ import org.testng.annotations.Test;
 import com.ch.base.TestBase;
 import com.ch.pages.DashboardPage;
 import com.ch.pages.LoginPage;
-import com.ch.pages.NINreasonsPage;
-import com.ch.pages.TIPPerformancePage;
+import com.ch.pages.NINrsnPage;
+import com.ch.pages.TIPPerfPage;
 import com.ch.util.CommonMethods;
 
 import junit.framework.Assert;
@@ -24,7 +24,7 @@ public class NINPageTest extends TestBase {
 
 	LoginPage loginPage;
 	DashboardPage dashboardPage;
-	NINreasonsPage ninreasonsPage;
+	NINrsnPage ninreasonsPage;
 	CommonMethods commonMethods;
 
 	XSSFWorkbook wb = null;
@@ -40,7 +40,7 @@ public class NINPageTest extends TestBase {
 	@BeforeMethod(alwaysRun = true)
 	public void setUp() throws InterruptedException, IOException, ParseException {		
 		internalinitialization();
-		ninreasonsPage = new NINreasonsPage();
+		ninreasonsPage = new NINrsnPage();
 		loginPage = new LoginPage();
 		commonMethods = new CommonMethods();
 		dashboardPage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));

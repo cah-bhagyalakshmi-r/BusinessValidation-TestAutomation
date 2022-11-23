@@ -28,7 +28,7 @@ import com.ch.base.TestBase;
 
 import junit.framework.Assert;
 
-public class RxEligibilityPage extends TestBase {
+public class RxEligPage extends TestBase {
 
 	@FindBy(xpath = "//body/div[1]/div[1]/div[1]/aside[1]/ul[1]/li[1]/ul[1]/li[1]/a[1]")
 	WebElement rxeligibility;
@@ -95,7 +95,7 @@ public class RxEligibilityPage extends TestBase {
 
 
 
-	public RxEligibilityPage() {
+	public RxEligPage() {
 		PageFactory.initElements(driver, this);
 	}
 

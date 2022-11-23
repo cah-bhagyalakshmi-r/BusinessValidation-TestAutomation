@@ -16,7 +16,7 @@ import com.ch.base.TestBase;
 
 import junit.framework.Assert;
 
-public class ClaimsActivityIntranetPage extends TestBase {
+public class ClaimsActyPage extends TestBase {
 
 	@FindBy(xpath = "//body/div[1]/div[1]/div[1]/aside[1]/ul[1]/li[1]/ul[1]/li[5]/a[1]")
 	WebElement claimactivity;
@@ -127,7 +127,7 @@ public class ClaimsActivityIntranetPage extends TestBase {
 	WebElement resultentries;
 
 	
-	public ClaimsActivityIntranetPage() {
+	public ClaimsActyPage() {
 		PageFactory.initElements(driver, this);
 	}
 	

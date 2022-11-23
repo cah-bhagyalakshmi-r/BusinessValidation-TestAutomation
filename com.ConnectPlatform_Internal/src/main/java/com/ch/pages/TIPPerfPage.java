@@ -24,7 +24,7 @@ import com.ch.base.TestBase;
 
 import junit.framework.Assert;
 
-public class TIPPerformancePage extends TestBase {
+public class TIPPerfPage extends TestBase {
 
 	@FindBy(xpath = "//body/div[1]/div[1]/div[1]/aside[1]/ul[1]/li[1]/ul[1]/li[4]/a[1]")
 	WebElement tipperformance;
@@ -116,7 +116,7 @@ public class TIPPerformancePage extends TestBase {
 	String currentDate = new SimpleDateFormat("MMddyyyy").format(new Date());
 
 	
-	public TIPPerformancePage() {
+	public TIPPerfPage() {
 		PageFactory.initElements(driver, this);
 	}
 	

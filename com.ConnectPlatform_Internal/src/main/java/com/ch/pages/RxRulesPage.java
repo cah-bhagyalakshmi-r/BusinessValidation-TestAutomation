@@ -30,7 +30,7 @@ import com.ch.util.CommonMethods;
 
 import junit.framework.Assert;
 
-public class RxRulesEnginePage extends TestBase {
+public class RxRulesPage extends TestBase {
 
 	@FindBy(xpath = "//a[contains(text(),'RxRules Engine')]")
 	WebElement rxrulesengine;
@@ -191,7 +191,7 @@ public class RxRulesEnginePage extends TestBase {
 	
 	int defaultwaittime=15;
 
-	public RxRulesEnginePage() {
+	public RxRulesPage() {
 		PageFactory.initElements(driver, this);
 		commonMethods = new CommonMethods();
 	}

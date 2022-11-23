@@ -21,7 +21,7 @@ import com.ch.util.CommonMethods;
 
 import junit.framework.Assert;
 
-public class TIPEnginePage extends TestBase {
+public class TIPPage extends TestBase {
 
 	@FindBy(xpath = "//a[contains(text(),'TIP Engine')]")
 	WebElement tipengine;
@@ -195,7 +195,7 @@ public class TIPEnginePage extends TestBase {
 	int defaultwaittime=15;
 	JavascriptExecutor js = (JavascriptExecutor)driver;
 
-	public TIPEnginePage() {
+	public TIPPage() {
 		PageFactory.initElements(driver, this);
 	}
 	

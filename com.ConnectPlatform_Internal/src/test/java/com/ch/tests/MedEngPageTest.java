@@ -12,15 +12,15 @@ import org.testng.annotations.Test;
 import com.ch.base.TestBase;
 import com.ch.pages.DashboardPage;
 import com.ch.pages.LoginPage;
-import com.ch.pages.MedicalRulesEnginePage;
-import com.ch.pages.TIPPerformancePage;
+import com.ch.pages.MedEngPage;
+import com.ch.pages.TIPPerfPage;
 import com.ch.util.CommonMethods;
 
 public class MedEngPageTest extends TestBase {
 
 	LoginPage loginPage;
 	DashboardPage dashboardPage;
-	MedicalRulesEnginePage medicalrulesenginePage;
+	MedEngPage medicalrulesenginePage;
 	CommonMethods commonMethods;
 
 	int defaultwaittime=25;
@@ -34,7 +34,7 @@ public class MedEngPageTest extends TestBase {
 	public void Medicalrulesengine_addrule_Validation() throws IOException, InterruptedException, ParseException
 	{	
 		internalinitialization();
-		medicalrulesenginePage = new MedicalRulesEnginePage();
+		medicalrulesenginePage = new MedEngPage();
 		loginPage = new LoginPage();
 		commonMethods = new CommonMethods();
 		dashboardPage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
@@ -80,7 +80,7 @@ public class MedEngPageTest extends TestBase {
 	public void Medicalrulesengine_editrule_Validation() throws IOException, InterruptedException, ParseException
 	{	
 		internalinitialization();
-		medicalrulesenginePage = new MedicalRulesEnginePage();
+		medicalrulesenginePage = new MedEngPage();
 		loginPage = new LoginPage();
 		commonMethods = new CommonMethods();
 		dashboardPage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
@@ -137,7 +137,7 @@ public class MedEngPageTest extends TestBase {
 	public void Medicalrulesengine_exportall_Validation() throws IOException, InterruptedException, ParseException
 	{	
 		internalinitialization();
-		medicalrulesenginePage = new MedicalRulesEnginePage();
+		medicalrulesenginePage = new MedEngPage();
 		loginPage = new LoginPage();
 		commonMethods = new CommonMethods();
 		dashboardPage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
@@ -158,7 +158,7 @@ public class MedEngPageTest extends TestBase {
 	public void Medicalrulesengine_exportindividualrule_Validation() throws IOException, InterruptedException, ParseException
 	{	
 		internalinitialization();
-		medicalrulesenginePage = new MedicalRulesEnginePage();
+		medicalrulesenginePage = new MedEngPage();
 		loginPage = new LoginPage();
 		commonMethods = new CommonMethods();
 		dashboardPage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));

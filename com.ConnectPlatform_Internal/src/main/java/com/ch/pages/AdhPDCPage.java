@@ -27,7 +27,7 @@ import com.ch.base.TestBase;
 
 import junit.framework.Assert;
 
-public class AdherencePDCRulesPage extends TestBase {
+public class AdhPDCPage extends TestBase {
 
 	@FindBy(xpath = "//a[contains(text(),'Adherence (PDC) rules')]")
 	WebElement adherencepdcrules;
@@ -83,7 +83,7 @@ public class AdherencePDCRulesPage extends TestBase {
 	
 	String csvFileName, previewrecords;
 
-	public AdherencePDCRulesPage() {
+	public AdhPDCPage() {
 		PageFactory.initElements(driver, this);
 	}
 

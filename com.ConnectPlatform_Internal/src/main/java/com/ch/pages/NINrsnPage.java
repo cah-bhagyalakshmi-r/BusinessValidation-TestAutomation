@@ -21,7 +21,7 @@ import com.ch.base.TestBase;
 
 import junit.framework.Assert;
 
-public class NINreasonsPage extends TestBase {
+public class NINrsnPage extends TestBase {
 
 	@FindBy(xpath = "//a[contains(text(),'NIN reasons')]")
 	WebElement ninreasons;
@@ -60,7 +60,7 @@ public class NINreasonsPage extends TestBase {
 	public WebElement save;
 	
 	
-	public NINreasonsPage() {
+	public NINrsnPage() {
 		PageFactory.initElements(driver, this);
 	}
 	

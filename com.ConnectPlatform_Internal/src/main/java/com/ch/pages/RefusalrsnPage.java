@@ -17,7 +17,7 @@ import com.ch.base.TestBase;
 
 import junit.framework.Assert;
 
-public class RefusalreasonPage extends TestBase {
+public class RefusalrsnPage extends TestBase {
 
 	@FindBy(xpath = "//a[contains(text(),'Refusal reasons')]")
 	WebElement refusalreasons;
@@ -82,7 +82,7 @@ public class RefusalreasonPage extends TestBase {
 	}
 	
 
-	public RefusalreasonPage() {
+	public RefusalrsnPage() {
 		PageFactory.initElements(driver, this);
 	}
 	

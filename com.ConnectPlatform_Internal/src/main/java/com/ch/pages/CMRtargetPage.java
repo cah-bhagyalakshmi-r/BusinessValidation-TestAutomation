@@ -16,7 +16,7 @@ import com.ch.base.TestBase;
 
 import junit.framework.Assert;
 
-public class CMRtargetedmembersPage extends TestBase {
+public class CMRtargetPage extends TestBase {
 
 	@FindBy(xpath = "//body/div[1]/div[1]/div[1]/aside[1]/ul[1]/li[1]/ul[1]/li[2]/a[1]")
 	WebElement cmrtargetedmembers;
@@ -85,7 +85,7 @@ public class CMRtargetedmembersPage extends TestBase {
 	WebElement downloadtoexcel;
 	
 	
-	public CMRtargetedmembersPage() {
+	public CMRtargetPage() {
 		PageFactory.initElements(driver, this);
 	}
 	

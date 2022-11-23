@@ -11,15 +11,15 @@ import org.testng.annotations.Test;
 import com.ch.base.TestBase;
 import com.ch.pages.DashboardPage;
 import com.ch.pages.LoginPage;
-import com.ch.pages.ReasoncodeTIPconfigurationPage;
-import com.ch.pages.TIPPerformancePage;
+import com.ch.pages.RsncodePage;
+import com.ch.pages.TIPPerfPage;
 import com.ch.util.CommonMethods;
 
 public class ResncodePageTest extends TestBase {
 
 	LoginPage loginPage;
 	DashboardPage dashboardPage;
-	ReasoncodeTIPconfigurationPage reasoncodeTIPconfigurationPage;
+	RsncodePage reasoncodeTIPconfigurationPage;
 	CommonMethods commonMethods;
 
 	XSSFWorkbook wb = null;
@@ -35,7 +35,7 @@ public class ResncodePageTest extends TestBase {
 	@BeforeMethod(alwaysRun = true)
 	public void setUp() throws InterruptedException, IOException, ParseException {		
 		internalinitialization();
-		reasoncodeTIPconfigurationPage = new ReasoncodeTIPconfigurationPage();
+		reasoncodeTIPconfigurationPage = new RsncodePage();
 		loginPage = new LoginPage();
 		commonMethods = new CommonMethods();
 		dashboardPage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));

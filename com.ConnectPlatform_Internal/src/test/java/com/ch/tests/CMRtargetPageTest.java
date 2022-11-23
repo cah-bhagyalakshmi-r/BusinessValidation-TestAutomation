@@ -10,7 +10,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.ch.base.TestBase;
-import com.ch.pages.CMRtargetedmembersPage;
+import com.ch.pages.CMRtargetPage;
 import com.ch.pages.DashboardPage;
 import com.ch.pages.LoginPage;
 import com.ch.util.CommonMethods;
@@ -19,7 +19,7 @@ public class CMRtargetPageTest extends TestBase {
 
 	LoginPage loginPage;
 	DashboardPage dashboardPage;
-	CMRtargetedmembersPage cmrtargetedmembersPage;
+	CMRtargetPage cmrtargetedmembersPage;
 	CommonMethods commonMethods;
 
 	XSSFWorkbook wb = null;
@@ -35,7 +35,7 @@ public class CMRtargetPageTest extends TestBase {
 	@BeforeMethod(alwaysRun = true)
 	public void setUp() throws InterruptedException, IOException, ParseException {		
 		internalinitialization();
-		cmrtargetedmembersPage = new CMRtargetedmembersPage();
+		cmrtargetedmembersPage = new CMRtargetPage();
 		loginPage = new LoginPage();
 		commonMethods = new CommonMethods();
 		dashboardPage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));

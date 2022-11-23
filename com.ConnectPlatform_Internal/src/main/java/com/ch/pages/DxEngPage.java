@@ -28,7 +28,7 @@ import com.ch.util.CommonMethods;
 
 import junit.framework.Assert;
 
-public class DxRulesEnginePage extends TestBase {
+public class DxEngPage extends TestBase {
 
 	@FindBy(xpath = "//a[contains(text(),'DxRules Engine')]")
 	WebElement dxrulesengine;
@@ -153,7 +153,7 @@ public class DxRulesEnginePage extends TestBase {
 	
 	CommonMethods commonMethods;
 
-	public DxRulesEnginePage() {
+	public DxEngPage() {
 		PageFactory.initElements(driver, this);
 		commonMethods = new CommonMethods();
 	}

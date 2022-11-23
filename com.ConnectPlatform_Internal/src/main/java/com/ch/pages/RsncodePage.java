@@ -17,7 +17,7 @@ import com.ch.base.TestBase;
 
 import junit.framework.Assert;
 
-public class ReasoncodeTIPconfigurationPage extends TestBase {
+public class RsncodePage extends TestBase {
 
 	@FindBy(xpath = "//a[contains(text(),'Reason code TIP configurations')]")
 	WebElement reasoncodetipconfiguration;
@@ -62,7 +62,7 @@ public class ReasoncodeTIPconfigurationPage extends TestBase {
 	public WebElement save;	
 
 
-	public ReasoncodeTIPconfigurationPage() {
+	public RsncodePage() {
 		PageFactory.initElements(driver, this);
 	}
 	

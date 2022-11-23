@@ -20,7 +20,7 @@ import com.ch.base.TestBase;
 
 import junit.framework.Assert;
 
-public class PolicyEnginePage extends TestBase {
+public class PolicyPage extends TestBase {
 
 	@FindBy(xpath = "//a[contains(text(),'Policy, contract & client setup')]")
 	WebElement policyengine;
@@ -170,7 +170,7 @@ public class PolicyEnginePage extends TestBase {
 	public WebElement edittipsave;
 	
 	
-	public PolicyEnginePage() {
+	public PolicyPage() {
 		PageFactory.initElements(driver, this);
 	}
 	

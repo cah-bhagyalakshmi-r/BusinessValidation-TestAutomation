@@ -11,14 +11,14 @@ import org.testng.annotations.Test;
 import com.ch.base.TestBase;
 import com.ch.pages.DashboardPage;
 import com.ch.pages.LoginPage;
-import com.ch.pages.RxEligibilityPage;
+import com.ch.pages.RxEligPage;
 import com.ch.util.CommonMethods;
 
 public class RxEligPageTest extends TestBase {
 
 	LoginPage loginPage;
 	DashboardPage dashboardPage;
-	RxEligibilityPage rxeligibilityPage;
+	RxEligPage rxeligibilityPage;
 	CommonMethods commonMethods;
 
 	XSSFWorkbook wb = null;
@@ -34,7 +34,7 @@ public class RxEligPageTest extends TestBase {
 	@BeforeMethod(alwaysRun = true)
 	public void setUp() throws InterruptedException, IOException, ParseException {		
 		internalinitialization();
-		rxeligibilityPage = new RxEligibilityPage();
+		rxeligibilityPage = new RxEligPage();
 		loginPage = new LoginPage();
 		commonMethods = new CommonMethods();
 		dashboardPage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));

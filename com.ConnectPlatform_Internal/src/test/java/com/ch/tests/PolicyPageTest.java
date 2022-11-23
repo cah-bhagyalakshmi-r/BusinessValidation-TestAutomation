@@ -13,14 +13,14 @@ import org.testng.annotations.Test;
 import com.ch.base.TestBase;
 import com.ch.pages.DashboardPage;
 import com.ch.pages.LoginPage;
-import com.ch.pages.PolicyEnginePage;
+import com.ch.pages.PolicyPage;
 import com.ch.util.CommonMethods;
 
 public class PolicyPageTest extends TestBase {
 
 	LoginPage loginPage;
 	DashboardPage dashboardPage;
-	PolicyEnginePage policyenginePage;
+	PolicyPage policyenginePage;
 	CommonMethods commonMethods;
 
 	int defaultwaittime=35;
@@ -33,7 +33,7 @@ public class PolicyPageTest extends TestBase {
 	@BeforeMethod(alwaysRun = true)
 	public void setUp() throws InterruptedException, IOException, ParseException {		
 		internalinitialization();
-		policyenginePage = new PolicyEnginePage();
+		policyenginePage = new PolicyPage();
 		loginPage = new LoginPage();
 		commonMethods = new CommonMethods();
 		dashboardPage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));

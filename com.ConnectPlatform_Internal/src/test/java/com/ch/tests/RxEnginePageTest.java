@@ -14,14 +14,14 @@ import org.testng.annotations.Test;
 import com.ch.base.TestBase;
 import com.ch.pages.DashboardPage;
 import com.ch.pages.LoginPage;
-import com.ch.pages.RxRulesEnginePage;
+import com.ch.pages.RxRulesPage;
 import com.ch.util.CommonMethods;
 
 public class RxEnginePageTest extends TestBase {
 
 	LoginPage loginPage;
 	DashboardPage dashboardPage;
-	RxRulesEnginePage rxrulesenginePage;
+	RxRulesPage rxrulesenginePage;
 	CommonMethods commonMethods;
 
 	int defaultwaittime=35;
@@ -35,7 +35,7 @@ public class RxEnginePageTest extends TestBase {
 	public void rxrulesengine_addrule_Validation() throws IOException, InterruptedException, ParseException
 	{	
 		internalinitialization();
-		rxrulesenginePage = new RxRulesEnginePage();
+		rxrulesenginePage = new RxRulesPage();
 		loginPage = new LoginPage();
 		commonMethods = new CommonMethods();
 		dashboardPage = loginPage.login(prop.getProperty("username"),prop.getProperty("password"));
@@ -87,7 +87,7 @@ public class RxEnginePageTest extends TestBase {
 	public void rxrulesengine_editrule_Validation() throws IOException, InterruptedException, ParseException
 	{	
 		internalinitialization();
-		rxrulesenginePage = new RxRulesEnginePage();
+		rxrulesenginePage = new RxRulesPage();
 		loginPage = new LoginPage();
 		commonMethods = new CommonMethods();
 		dashboardPage = loginPage.login(prop.getProperty("username"),prop.getProperty("password")); commonMethods.implicitwait(defaultwaittime);
@@ -136,7 +136,7 @@ public class RxEnginePageTest extends TestBase {
 	public void rxrulesengine_exportrule_Validation() throws IOException, InterruptedException, ParseException
 	{	
 		internalinitialization();
-		rxrulesenginePage = new RxRulesEnginePage();
+		rxrulesenginePage = new RxRulesPage();
 		loginPage = new LoginPage();
 		commonMethods = new CommonMethods();
 		dashboardPage = loginPage.login(prop.getProperty("username"),prop.getProperty("password")); commonMethods.implicitwait(defaultwaittime);
@@ -164,7 +164,7 @@ public class RxEnginePageTest extends TestBase {
 	public void rxrulesengine_druglookup_Validation() throws IOException, InterruptedException, ParseException
 	{	
 		internalinitialization();
-		rxrulesenginePage = new RxRulesEnginePage();
+		rxrulesenginePage = new RxRulesPage();
 		loginPage = new LoginPage();
 		commonMethods = new CommonMethods();
 		dashboardPage = loginPage.login(prop.getProperty("username"),prop.getProperty("password")); commonMethods.implicitwait(defaultwaittime);

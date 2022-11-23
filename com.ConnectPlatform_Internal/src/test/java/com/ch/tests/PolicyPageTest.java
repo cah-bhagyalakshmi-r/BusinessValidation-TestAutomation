@@ -16,7 +16,7 @@ import com.ch.pages.LoginPage;
 import com.ch.pages.PolicyEnginePage;
 import com.ch.util.CommonMethods;
 
-public class PolicyEnginePageTest extends TestBase {
+public class PolicyPageTest extends TestBase {
 
 	LoginPage loginPage;
 	DashboardPage dashboardPage;
@@ -26,7 +26,7 @@ public class PolicyEnginePageTest extends TestBase {
 	int defaultwaittime=35;
 	int normalwaittime=5;
 
-	public PolicyEnginePageTest(){
+	public PolicyPageTest(){
 		super();			
 	}
 

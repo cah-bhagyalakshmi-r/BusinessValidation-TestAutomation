@@ -15,7 +15,7 @@ import com.ch.util.CommonMethods;
 
 import junit.framework.Assert;
 
-public class DxRulesEnginePageTest extends TestBase {
+public class DxEngPageTest extends TestBase {
 
 	LoginPage loginPage;
 	DashboardPage dashboardPage;
@@ -25,7 +25,7 @@ public class DxRulesEnginePageTest extends TestBase {
 	int defaultwaittime=35;
 	int normalwaittime=5;
 
-	public DxRulesEnginePageTest(){
+	public DxEngPageTest(){
 		super();			
 	}
 

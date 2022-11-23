@@ -15,7 +15,7 @@ import com.ch.pages.ReasoncodeTIPconfigurationPage;
 import com.ch.pages.TIPPerformancePage;
 import com.ch.util.CommonMethods;
 
-public class ReasoncodePageTest extends TestBase {
+public class ResncodePageTest extends TestBase {
 
 	LoginPage loginPage;
 	DashboardPage dashboardPage;
@@ -28,7 +28,7 @@ public class ReasoncodePageTest extends TestBase {
 	int defaultwaittime=15;
 	int normalwaittime=5;
 
-	public ReasoncodePageTest(){
+	public ResncodePageTest(){
 		super();			
 	}
 

@@ -14,7 +14,7 @@ import com.ch.pages.LoginPage;
 import com.ch.pages.RxEligibilityPage;
 import com.ch.util.CommonMethods;
 
-public class RxEligibilityPageTest extends TestBase {
+public class RxEligPageTest extends TestBase {
 
 	LoginPage loginPage;
 	DashboardPage dashboardPage;
@@ -27,7 +27,7 @@ public class RxEligibilityPageTest extends TestBase {
 	int defaultwaittime=15;
 	int normalwaittime=5;
 
-	public RxEligibilityPageTest(){
+	public RxEligPageTest(){
 		super();			
 	}
 

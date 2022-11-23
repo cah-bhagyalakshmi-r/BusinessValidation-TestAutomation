@@ -21,7 +21,7 @@ import com.ch.util.CommonMethods;
 
 import junit.framework.Assert;
 
-public class RefusalreasonPageTest extends TestBase {
+public class RefusalPageTest extends TestBase {
 
 	LoginPage loginPage;
 	DashboardPage dashboardPage;
@@ -31,7 +31,7 @@ public class RefusalreasonPageTest extends TestBase {
 	int defaultwaittime=15;
 	int normalwaittime=5;
 
-	public RefusalreasonPageTest(){
+	public RefusalPageTest(){
 		super();			
 	}
 

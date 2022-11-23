@@ -20,7 +20,7 @@ import com.ch.util.CommonMethods;
 
 import junit.framework.Assert;
 
-public class NINreasonsPageTest extends TestBase {
+public class NINPageTest extends TestBase {
 
 	LoginPage loginPage;
 	DashboardPage dashboardPage;
@@ -33,7 +33,7 @@ public class NINreasonsPageTest extends TestBase {
 	int defaultwaittime=25;
 	int normalwaittime=5;
 
-	public NINreasonsPageTest(){
+	public NINPageTest(){
 		super();			
 	}
 

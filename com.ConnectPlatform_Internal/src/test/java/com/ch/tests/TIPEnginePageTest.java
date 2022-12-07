@@ -58,31 +58,29 @@ public class TIPEnginePageTest extends TestBase {
 		System.out.println("tip name:" +tipname);
 		commonMethods.implicitwait(defaultwaittime); 
 		tipenginePage.savetip_click();
-		commonMethods.implicitwait(defaultwaittime);
-		tipenginePage.searchinput.sendKeys(tipname);
-		commonMethods.implicitwait(defaultwaittime);
-		String newtipcreated= tipenginePage.newtipdata.getText().trim();
-		System.out.println("new tip created :" +newtipcreated);
-		Assert.assertEquals(tipname, newtipcreated);
-		commonMethods.implicitwait(defaultwaittime);
-		tipenginePage.newtipdata.click();
-		commonMethods.implicitwait(defaultwaittime);
-		tipenginePage.edittip_click();
-		commonMethods.implicitwait(defaultwaittime);
-		tipenginePage.tipgeneration_change();
-		commonMethods.implicitwait(defaultwaittime); 
-		JavascriptExecutor js = (JavascriptExecutor)driver; 
-		js.executeScript("window.scrollBy(0,-1000)", "");
-		commonMethods.implicitwait(defaultwaittime); 
-		tipenginePage.savetip_click();
-		commonMethods.implicitwait(defaultwaittime);
-		tipenginePage.editipsave_msgvalidation();
-		commonMethods.implicitwait(defaultwaittime);
-		tipenginePage.searchinput.sendKeys(tipname);
-		commonMethods.implicitwait(defaultwaittime);
-		tipenginePage.newtipdata.click();
-		commonMethods.implicitwait(defaultwaittime);
-		js.executeScript("window.scrollBy(0,3000)", "");
+	  commonMethods.implicitwait(defaultwaittime);
+	  tipenginePage.searchinput.sendKeys(tipname);
+	  commonMethods.implicitwait(defaultwaittime); String newtipcreated=
+	  tipenginePage.newtipdata.getText().trim();
+	  System.out.println("new tip created :" +newtipcreated);
+	  Assert.assertEquals(tipname, newtipcreated);
+	  commonMethods.implicitwait(defaultwaittime);
+	  tipenginePage.newtipdata.click();
+	  commonMethods.implicitwait(defaultwaittime); tipenginePage.edittip_click();
+	  commonMethods.implicitwait(defaultwaittime);
+	  tipenginePage.tipgeneration_change();
+	  commonMethods.implicitwait(defaultwaittime); JavascriptExecutor js =
+	  (JavascriptExecutor)driver; js.executeScript("window.scrollBy(0,-1000)", "");
+	  commonMethods.implicitwait(defaultwaittime); tipenginePage.savetip_click();
+	  commonMethods.implicitwait(defaultwaittime);
+	  tipenginePage.editipsave_msgvalidation();
+	  commonMethods.implicitwait(defaultwaittime);
+	  tipenginePage.searchinput.sendKeys(tipname);
+	  commonMethods.implicitwait(defaultwaittime);
+	  tipenginePage.newtipdata.click();
+	  commonMethods.implicitwait(defaultwaittime);
+	  js.executeScript("window.scrollBy(0,3000)", "");
+		 
 		
 	}
 	

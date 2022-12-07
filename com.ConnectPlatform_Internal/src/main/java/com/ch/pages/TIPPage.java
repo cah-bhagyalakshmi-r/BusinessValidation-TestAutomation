@@ -238,20 +238,34 @@ public class TIPPage extends TestBase {
 	public void severityselect() throws InterruptedException {
 		Thread.sleep(3000);
 		selectseverity.click();
+		//Thread.sleep(2000);
+		//selectseverityinput.click();
+		//JavascriptExecutor executor = (JavascriptExecutor) driver;
+		//executor.executeScript("arguments[0].scrollIntoView();", selectseverity);
+		//executor.executeScript("arguments[0].click();", selectseverity);
 		Thread.sleep(2000);
 		selectseverityinput.click();
 	}
 	
 	public void directtip_click() {
-		directtip.click();
+		//directtip.click();
+		JavascriptExecutor executor = (JavascriptExecutor) driver;
+		executor.executeScript("arguments[0].scrollIntoView();", directtip);
+		executor.executeScript("arguments[0].click();", directtip);
 	}
 	
 	public void runtiprule_click() {
-		runtiprules.click();
+		//runtiprules.click();
+		JavascriptExecutor executor = (JavascriptExecutor) driver;
+		executor.executeScript("arguments[0].scrollIntoView();", runtiprules);
+		executor.executeScript("arguments[0].click();", runtiprules);
 	}
 	
 	public void medsyncnone_click() {
-		medsyncnone.click();
+		JavascriptExecutor executor = (JavascriptExecutor) driver;
+		executor.executeScript("arguments[0].scrollIntoView();", medsyncnone);
+		executor.executeScript("arguments[0].click();", medsyncnone);
+		//medsyncnone.click();
 	}
 	
 	public void tipgeneration_input() {

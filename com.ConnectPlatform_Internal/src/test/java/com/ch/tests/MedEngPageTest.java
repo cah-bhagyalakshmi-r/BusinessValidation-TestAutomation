@@ -102,6 +102,8 @@ public class MedEngPageTest extends TestBase {
 		medicalrulesenginePage.diagnosiscode_edit();
 		commonMethods.implicitwait(defaultwaittime);
 		String diagnosisinpt= medicalrulesenginePage.diagnoscode.getAttribute("value");
+		medicalrulesenginePage.preview_click();
+		commonMethods.implicitwait(defaultwaittime);
 		medicalrulesenginePage.savebutton_click();
 		commonMethods.implicitwait(defaultwaittime);
 		medicalrulesenginePage.okbutton_click();

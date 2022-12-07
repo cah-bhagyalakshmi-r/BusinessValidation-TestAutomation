@@ -62,4 +62,3 @@ public class CMRtargetPageTest extends TestBase {
 	}
 }
 
-

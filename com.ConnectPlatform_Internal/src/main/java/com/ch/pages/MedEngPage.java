@@ -264,23 +264,24 @@ public class MedEngPage extends TestBase {
 		Thread.sleep(2000);
 		String diagnosisinpt= diagnoscode.getAttribute("value");
 		System.out.println("Diagnosis code:" +diagnosisinpt);
-		if(diagnosisinpt.contains("G912")){
+		if(diagnosisinpt.contains("Z0")){
 			diagnosiscode_clear();
 			diagnoscode.sendKeys("G6");}
 		else if(diagnosisinpt.contains("G6")){
 			diagnosiscode_clear();
-			diagnoscode.sendKeys("G912");}		
+			diagnoscode.sendKeys("Z0");}		
 		else {
 			diagnosiscode_clear();
-			diagnoscode.sendKeys("G912");}
+			diagnoscode.sendKeys("Z0");}
 	}
 	
 	public void preview_click() throws InterruptedException {
 		//preview.click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		JavascriptExecutor executor = (JavascriptExecutor) driver;
-		executor.executeScript("arguments[0].scrollIntoView();", preview);
+		//executor.executeScript("arguments[0].scrollIntoView();", preview);
 		executor.executeScript("arguments[0].click();", preview);
+		Thread.sleep(3000);
 
 	}
 
@@ -422,7 +423,7 @@ public class MedEngPage extends TestBase {
 		executor.executeScript("arguments[0].scrollIntoView();", exportresults);
 		executor.executeScript("arguments[0].click();", exportresults);
 		//exportresults.click();
-		Thread.sleep(5000);
+		Thread.sleep(10000);
 	}
 
 	public void existingrulevalidation() {

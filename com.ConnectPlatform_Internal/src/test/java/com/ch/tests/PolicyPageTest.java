@@ -39,7 +39,7 @@ public class PolicyPageTest extends TestBase {
 		dashboardPage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 	}
 	
-	@Test(description = "Policy Engine- Export tip from policy level validation", priority =1, groups = {"Regression"})
+	//@Test(description = "Policy Engine- Export tip from policy level validation", priority =1, groups = {"Regression"})
 	public void policyengine_exportipfrompolicylevel_Validation() throws IOException, InterruptedException, ParseException
 	{	
 		commonMethods.implicitwait(defaultwaittime);
@@ -59,7 +59,7 @@ public class PolicyPageTest extends TestBase {
 		commonMethods.implicitwait(defaultwaittime);		
 	}
 
-	@Test(description = "Policy Engine- Bulk tip export validation", priority =2, groups = {"Regression"})
+	//@Test(description = "Policy Engine- Bulk tip export validation", priority =2, groups = {"Regression"})
 	public void policyengine_bulktipexport_Validation() throws IOException, InterruptedException, ParseException, AWTException
 	{	
 		commonMethods.implicitwait(defaultwaittime);

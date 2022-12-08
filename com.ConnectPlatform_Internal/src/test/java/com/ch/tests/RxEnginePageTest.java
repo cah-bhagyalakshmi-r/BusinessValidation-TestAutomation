@@ -132,7 +132,7 @@ public class RxEnginePageTest extends TestBase {
 		
 	}
 
-	@Test(description = "Rx Rules Engine export rule Validation", priority =3, groups = {"Regression"})
+	//@Test(description = "Rx Rules Engine export rule Validation", priority =3, groups = {"Regression"})
 	public void rxrulesengine_exportrule_Validation() throws IOException, InterruptedException, ParseException
 	{	
 		internalinitialization();
@@ -160,7 +160,7 @@ public class RxEnginePageTest extends TestBase {
 		commonMethods.implicitwait(defaultwaittime);
 	}
 
-	@Test(description = "Rx Rules Engine drug lookup Validation", priority =4, groups = {"Regression"})
+	//@Test(description = "Rx Rules Engine drug lookup Validation", priority =4, groups = {"Regression"})
 	public void rxrulesengine_druglookup_Validation() throws IOException, InterruptedException, ParseException
 	{	
 		internalinitialization();

@@ -117,7 +117,7 @@ public class DxEngPageTest extends TestBase {
 		System.out.println("rule was edited successfully");			
 	}
 
-	//@Test(description = "Dx Rules Engine export individual rule Validation", priority =3, groups = {"Regression"})
+	@Test(description = "Dx Rules Engine export individual rule Validation", priority =3, groups = {"Regression"})
 	public void dxrulesengine_exportindividualrule_Validation() throws IOException, InterruptedException, ParseException
 	{	
 		internalinitialization();

@@ -40,7 +40,7 @@ public class RxEligPageTest extends TestBase {
 		dashboardPage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 	}
 	
-	//@Test(description = "Verify Rx Export download to excel validation", priority = 2, groups = { "Sanity", "Regression" })
+	@Test(description = "Verify Rx Export download to excel validation", priority = 2, groups = { "Sanity", "Regression" })
 	public void rxexportdownloadexcel_validation() throws Exception {
 		commonMethods.implicitwait(defaultwaittime);
 		rxeligibilityPage.rxeligibility_click();
@@ -57,7 +57,7 @@ public class RxEligPageTest extends TestBase {
 		commonMethods.implicitwait(defaultwaittime);	
 	}
 	
-	//@Test(description = "Verify Rx Eligibility download to excel validation", priority = 2, groups = { "Sanity", "Regression" })
+	@Test(description = "Verify Rx Eligibility download to excel validation", priority = 2, groups = { "Sanity", "Regression" })
 	public void rxeligibilitydownloadexcel_validation() throws Exception {
 		commonMethods.implicitwait(defaultwaittime);
 		rxeligibilityPage.rxeligibility_click();

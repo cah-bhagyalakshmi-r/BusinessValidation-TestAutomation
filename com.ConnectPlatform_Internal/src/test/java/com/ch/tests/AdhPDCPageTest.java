@@ -98,7 +98,7 @@ public class AdhPDCPageTest extends TestBase {
 		
 	}
 
-	//@Test(description = "Adherence PDC rules export results Validation", priority =2, groups = {"Regression"})
+	@Test(description = "Adherence PDC rules export results Validation", priority =2, groups = {"Regression"})
 	public void adherencepdcrules_exportexcelresults_Validation() throws IOException, InterruptedException, ParseException
 	{	
 		commonMethods.implicitwait(defaultwaittime);

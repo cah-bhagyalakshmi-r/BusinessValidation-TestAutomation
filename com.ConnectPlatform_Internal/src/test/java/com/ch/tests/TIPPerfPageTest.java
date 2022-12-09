@@ -40,7 +40,7 @@ public class TIPPerfPageTest extends TestBase {
 		dashboardPage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 	}
 
-	//@Test(description = "Verify tip performance Report download to excel", priority = 2, groups = { "Sanity","Regression" })
+	@Test(description = "Verify tip performance Report download to excel", priority = 2, groups = { "Sanity","Regression" })
 	public void tipperformance_downloadexcel_validation() throws IOException, InterruptedException, ParseException {
 		commonMethods.implicitwait(defaultwaittime);
 		tipperformancePage.tipperformance_click();

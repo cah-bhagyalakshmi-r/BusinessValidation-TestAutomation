@@ -244,8 +244,8 @@ public class MedEngPage extends TestBase {
 	
 	public void effdate_clear() throws InterruptedException {
 		Thread.sleep(2000);
-		//effectivedateinput.clear();
-		effectivedateinput.sendKeys(Keys.chord(Keys.COMMAND,"a", Keys.DELETE));
+		effectivedateinput.clear();
+		//effectivedateinput.sendKeys(Keys.chord(Keys.COMMAND,"a", Keys.DELETE));
 	}
 
 	public void addrow_click() {

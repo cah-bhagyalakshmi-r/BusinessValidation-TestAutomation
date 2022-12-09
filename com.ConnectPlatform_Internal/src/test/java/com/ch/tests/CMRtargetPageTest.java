@@ -41,7 +41,7 @@ public class CMRtargetPageTest extends TestBase {
 		dashboardPage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 	}
 
-	//@Test(description = "Verify cmr targeted members Report download to excel", priority = 2, groups = { "Sanity", "Regression" })
+	@Test(description = "Verify cmr targeted members Report download to excel", priority = 2, groups = { "Sanity", "Regression" })
 	public void cmrtargetedmembersdownloadexcel_validation() throws IOException, InterruptedException, ParseException {
 		commonMethods.implicitwait(defaultwaittime);
 		cmrtargetedmembersPage.cmrtargetedmembers_click();

@@ -3,22 +3,22 @@
 <suite name="Connect Platform Internal Business Automation Suite">
 
  <listeners>
- <listener class-name="com.ch.ExtentReportListener.ExtentReporter"/>  
+ <listener class-name="com.ch.ExtentReport.ExtentReporter"/>  
  </listeners>
   <test name="Connect Platform Internal Business Validation Test"> 
     <classes>
-      <class name="com.ch.tests.CMRtargetedmembersPageTest"/>
-      <class name="com.ch.tests.DxRulesEnginePageTest"/>
-      <class name="com.ch.tests.MedicalRulesEnginePageTest"/>
-      <class name="com.ch.tests.TIPPerformancePageTest"/>    
-      <class name="com.ch.tests.RxRulesEnginePageTest"/>
-      <class name="com.ch.tests.ReasoncodeTIPconfigurationPageTest"/>
-      <class name="com.ch.tests.AdherencePDCRulesPageTest"/>
+      <class name="com.ch.tests.CMRtargetPageTest"/>
+      <class name="com.ch.tests.DxEngPageTest"/>
+      <class name="com.ch.tests.MedEngPageTest"/>
+      <class name="com.ch.tests.TIPPerfPageTest"/>    
+      <class name="com.ch.tests.RxEnginePageTest"/>
+      <class name="com.ch.tests.ResncodePageTest"/>
+      <class name="com.ch.tests.AdhPDCPageTest"/>
       <class name="com.ch.tests.TIPEnginePageTest"/>
-      <class name="com.ch.tests.PolicyEnginePageTest"/>
-      <class name="com.ch.tests.NINreasonsPageTest"/>
-      <class name="com.ch.tests.RefusalreasonPageTest"/>
-      <class name="com.ch.tests.RxEligibilityPageTest"/>
+      <class name="com.ch.tests.PolicyPageTest"/>
+      <class name="com.ch.tests.NINPageTest"/>
+      <class name="com.ch.tests.RefusalPageTest"/>
+      <class name="com.ch.tests.RxEligPageTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

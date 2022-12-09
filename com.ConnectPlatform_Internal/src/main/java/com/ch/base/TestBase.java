@@ -3,16 +3,22 @@ package com.ch.base;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStream;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 
 import com.ch.pages.LoginPage;
+import com.ch.util.TestUtil;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -44,19 +50,28 @@ public class TestBase {
 		String browserName = prop.getProperty("browser");	
 		if(browserName.equals("chrome")){
 			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/src/main/Resources/chromedriver");
-			//System.out.println("path..."+System.getProperty("user.dir")+"src/main/Resources/chromedriver");
+			//			System.out.println("path..."+System.getProperty("user.dir")+"src/main/Resources/chromedriver");
 			WebDriverManager.chromedriver().setup();
 			ChromeOptions options = new ChromeOptions();
 			Map<String,Object> prefs = new HashMap<String, Object>();
 			prefs.put("credentials_enable_service", false);
 			prefs.put("profile.password_manager_enabled", false);
+
+
+
 			prefs.put("plugins.plugins_disabled", new String[] { "Chrome PDF Viewer" });
 			prefs.put("plugins.always_open_pdf_externally", true);
 			prefs.put("profile.default_content_settings.popups", 0);
 			prefs.put("download.prompt_for_download", "false");
+
+			//String downloadFilepath = "D:\\Lime Doc";
+			//prefs.put("download.default_directory", downloadFilepath);
+
 			prefs.put("download.default_directory", System.getProperty("user.dir") + "/src/main/java/com/ch/testdata"); 
 			options.setExperimentalOption("prefs", prefs);
 			options.addArguments("--no-proxy-server");
+
+			//options.addArguments("proxy-bypass-list=<-loopback>");
 			options.addArguments("--ignore-certificate-errors");
 			options.addArguments("--proxy-server='direct://'");
 			options.addArguments("--proxy-bypass-list=*");
@@ -73,9 +88,22 @@ public class TestBase {
 			options.addArguments("--window-size=1920,1080"); // Bypass OS security model
 			//options.addArguments("--headless");
 			//options.addArguments("--no-sandbox");
+
+			//			System.setProperty("webdriver.chrome.args", "--disable-logging");
+			//			System.setProperty("webdriver.chrome.silentOutput", "true");
 			options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
 			options.addArguments("window-size=1024,768"); // Bypass OS security model
+			//			options.setCapability(browserName, "Chrome");
+			//options.setBinary("/usr/bin/google-chrome");
+			//			options.setBinary("/Applications/Google Chrome.app/Contents/MacOS/Google Chrome");
+			//			try {
+			//				driver = new RemoteWebDriver(new URL("http://localhost:4444"), options);
+
 			driver = new ChromeDriver(options);
+			//			} catch (MalformedURLException e) {
+			//				// TODO Auto-generated catch block
+			//				e.printStackTrace();
+			//			}
 		}
 		else if(browserName.equals("FF")){
 			System.setProperty("webdriver.gecko.driver", "src/main/java/Resources/geckodriver");	
@@ -83,7 +111,11 @@ public class TestBase {
 		}			
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		System.out.println("URL.....: "+prop.getProperty("internalstagephiurl"));
+
+		//driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
+		//driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
+		//System.out.println("URL.....: "+prop.getProperty("internalstagephiurl"));
+		//driver.get(prop.getProperty("internalurl"));
 		driver.get(prop.getProperty("internalstagephiurl"));
 	}
 

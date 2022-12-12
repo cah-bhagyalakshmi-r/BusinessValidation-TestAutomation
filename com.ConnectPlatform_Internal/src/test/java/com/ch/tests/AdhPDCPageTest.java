@@ -37,7 +37,7 @@ public class AdhPDCPageTest extends TestBase {
 		dashboardPage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 	}
 	
-	@Test(description = "Adherence PDC Rules- create,Edit,lookback change and pdcstatus off Validation", priority =1, groups = {"Regression"})
+	//@Test(description = "Adherence PDC Rules- create,Edit,lookback change and pdcstatus off Validation", priority =1, groups = {"Regression"})
 	public void adherencepdcaddandeditrules_Validation() throws IOException, InterruptedException, ParseException
 	{	
 		commonMethods.implicitwait(defaultwaittime);

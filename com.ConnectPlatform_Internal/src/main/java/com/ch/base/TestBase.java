@@ -66,7 +66,6 @@ public class TestBase {
 			options.addArguments("--ignore-certificate-errors");
 			options.addArguments("--proxy-server='direct://'");
 			options.addArguments("--proxy-bypass-list=*");
-			options.addArguments("--start-maximised");
 			options.setAcceptInsecureCerts(true);
 			options.addArguments("--ignore-certificate-errors");
 			options.addArguments("--disable-gpu");

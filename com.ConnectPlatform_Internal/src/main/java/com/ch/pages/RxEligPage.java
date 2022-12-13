@@ -126,12 +126,12 @@ public class RxEligPage extends TestBase {
 
 	public void exporteligibility_click() throws InterruptedException {
 		exporteligibility.click();	
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 	}
 	
 	public void exportrx_click() throws InterruptedException {
 		exportrx.click();	
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 	}
 
 	public static String check_file_exist() {

@@ -285,9 +285,9 @@ public class DxEngPage extends TestBase {
 	}
 	
 	public void effectivedate_clear() throws InterruptedException{
-		effectivedateinput.clear();
-		//effectivedateinput.sendKeys(Keys.COMMAND + "a");
-		//effectivedateinput.sendKeys(Keys.DELETE);
+		//effectivedateinput.clear();
+		effectivedateinput.sendKeys(Keys.CONTROL + "a");
+		effectivedateinput.sendKeys(Keys.DELETE);
 		Thread.sleep(2000);
 	}
 	

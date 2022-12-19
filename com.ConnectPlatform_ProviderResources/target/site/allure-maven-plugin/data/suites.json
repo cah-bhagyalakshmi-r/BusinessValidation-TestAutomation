@@ -1,0 +1,105 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "Suite",
+    "children" : [ {
+      "name" : "Test",
+      "children" : [ {
+        "name" : "com.ch.tests.SearchFunctionalityTest",
+        "children" : [ {
+          "name" : "SearchTestByID",
+          "uid" : "ae9f4dc359dc67d9",
+          "parentUid" : "07a5cb0128899923d60a5a1b45a8c1cf",
+          "status" : "passed",
+          "time" : {
+            "start" : 1593715924441,
+            "stop" : 1593715945183,
+            "duration" : 20742
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "07a5cb0128899923d60a5a1b45a8c1cf"
+      }, {
+        "name" : "com.ch.tests.TIPTest",
+        "children" : [ {
+          "name" : "TTest",
+          "uid" : "275f9df63cdee344",
+          "parentUid" : "fd5203398fdbd4761fa4c4dc53377223",
+          "status" : "passed",
+          "time" : {
+            "start" : 1593715995547,
+            "stop" : 1593716021363,
+            "duration" : 25816
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "fd5203398fdbd4761fa4c4dc53377223"
+      }, {
+        "name" : "com.ch.tests.ClaimsSubmissionTest",
+        "children" : [ {
+          "name" : "ClaimsSubmission",
+          "uid" : "6a8a3fb399006c4a",
+          "parentUid" : "6a4c544ad19487497dcd59953c03821d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1593715872565,
+            "stop" : 1593715922247,
+            "duration" : 49682
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "6a4c544ad19487497dcd59953c03821d"
+      }, {
+        "name" : "com.ch.tests.LoginTest",
+        "children" : [ {
+          "name" : "postiveLoginTest",
+          "uid" : "863201cde4004d76",
+          "parentUid" : "310f9aa57ae5034a175acec5ad90c566",
+          "status" : "passed",
+          "time" : {
+            "start" : 1593715841807,
+            "stop" : 1593715853470,
+            "duration" : 11663
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "negativeLoginTest",
+          "uid" : "2034a629f1850e3e",
+          "parentUid" : "310f9aa57ae5034a175acec5ad90c566",
+          "status" : "passed",
+          "time" : {
+            "start" : 1593715855450,
+            "stop" : 1593715870644,
+            "duration" : 15194
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "310f9aa57ae5034a175acec5ad90c566"
+      }, {
+        "name" : "com.ch.tests.FailedCMRTest",
+        "children" : [ {
+          "name" : "FailedCMR1",
+          "uid" : "af3dd91e3246d43d",
+          "parentUid" : "6823edc00267f653ddc832b795efdf67",
+          "status" : "passed",
+          "time" : {
+            "start" : 1593715947210,
+            "stop" : 1593715993302,
+            "duration" : 46092
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "6823edc00267f653ddc832b795efdf67"
+      } ],
+      "uid" : "7314231e84d67a341867b5c9d3f928d2"
+    } ],
+    "uid" : "29f4dcc45a0e26cd7c7462063cee854b"
+  } ]
+}

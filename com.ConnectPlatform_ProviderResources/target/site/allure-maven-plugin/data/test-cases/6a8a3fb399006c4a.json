@@ -1,0 +1,73 @@
+{
+  "uid" : "6a8a3fb399006c4a",
+  "name" : "ClaimsSubmission",
+  "fullName" : "com.ch.tests.ClaimsSubmissionTest.ClaimsSubmission",
+  "historyId" : "4b90a8e252cd755139cc81c127730fac",
+  "time" : {
+    "start" : 1593715872565,
+    "stop" : 1593715922247,
+    "duration" : 49682
+  },
+  "description" : "Verification of Claims Submission",
+  "descriptionHtml" : "<p>Verification of Claims Submission</p>\n",
+  "status" : "passed",
+  "statusDetails" : {
+    "flaky" : false
+  },
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "host",
+    "value" : "LOH070XPGH4JK77.cardinalhealth.net"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ch.tests.ClaimsSubmissionTest"
+  }, {
+    "name" : "testGroup",
+    "value" : "Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "ClaimsSubmission"
+  }, {
+    "name" : "testSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "thread",
+    "value" : "4337@LOH070XPGH4JK77.cardinalhealth.net.main(1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ch.tests.ClaimsSubmissionTest"
+  }, {
+    "name" : "package",
+    "value" : "com.ch.tests.ClaimsSubmissionTest"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "statusMessage" : {
+    "present" : false
+  },
+  "source" : "6a8a3fb399006c4a.json",
+  "statusDetailsSafe" : {
+    "flaky" : false
+  },
+  "parameterValues" : [ ]
+}

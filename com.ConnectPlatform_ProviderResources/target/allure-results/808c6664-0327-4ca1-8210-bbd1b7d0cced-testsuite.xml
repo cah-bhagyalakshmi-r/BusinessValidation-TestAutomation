@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1593715836936" stop="1593716021558" version="1.5.4" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Suite : Test</name>
+    <title>Suite : Test</title>
+    <test-cases>
+        <test-case start="1593715841807" stop="1593715853470" status="passed">
+            <name>postiveLoginTest</name>
+            <description>Verifying login functionality</description>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Suite"/>
+                <label name="testGroup" value="Test"/>
+                <label name="testClass" value="com.ch.tests.LoginTest"/>
+                <label name="testMethod" value="postiveLoginTest"/>
+                <label name="host" value="LOH070XPGH4JK77.cardinalhealth.net"/>
+                <label name="thread" value="4337@LOH070XPGH4JK77.cardinalhealth.net.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1593715855450" stop="1593715870644" status="passed">
+            <name>negativeLoginTest</name>
+            <description></description>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Suite"/>
+                <label name="testGroup" value="Test"/>
+                <label name="testClass" value="com.ch.tests.LoginTest"/>
+                <label name="testMethod" value="negativeLoginTest"/>
+                <label name="host" value="LOH070XPGH4JK77.cardinalhealth.net"/>
+                <label name="thread" value="4337@LOH070XPGH4JK77.cardinalhealth.net.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1593715872565" stop="1593715922247" status="passed">
+            <name>ClaimsSubmission</name>
+            <description>Verification of Claims Submission</description>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Suite"/>
+                <label name="testGroup" value="Test"/>
+                <label name="testClass" value="com.ch.tests.ClaimsSubmissionTest"/>
+                <label name="testMethod" value="ClaimsSubmission"/>
+                <label name="host" value="LOH070XPGH4JK77.cardinalhealth.net"/>
+                <label name="thread" value="4337@LOH070XPGH4JK77.cardinalhealth.net.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1593715924441" stop="1593715945183" status="passed">
+            <name>SearchTestByID</name>
+            <description>Verification of Search functionality</description>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Suite"/>
+                <label name="testGroup" value="Test"/>
+                <label name="testClass" value="com.ch.tests.SearchFunctionalityTest"/>
+                <label name="testMethod" value="SearchTestByID"/>
+                <label name="host" value="LOH070XPGH4JK77.cardinalhealth.net"/>
+                <label name="thread" value="4337@LOH070XPGH4JK77.cardinalhealth.net.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1593715947210" stop="1593715993302" status="passed">
+            <name>FailedCMR1</name>
+            <description>Verification of Unsuccessful CMR workflow</description>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Suite"/>
+                <label name="testGroup" value="Test"/>
+                <label name="testClass" value="com.ch.tests.FailedCMRTest"/>
+                <label name="testMethod" value="FailedCMR1"/>
+                <label name="host" value="LOH070XPGH4JK77.cardinalhealth.net"/>
+                <label name="thread" value="4337@LOH070XPGH4JK77.cardinalhealth.net.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1593715995547" stop="1593716021363" status="passed">
+            <name>TTest</name>
+            <description>Verification of TIP workflow</description>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Suite"/>
+                <label name="testGroup" value="Test"/>
+                <label name="testClass" value="com.ch.tests.TIPTest"/>
+                <label name="testMethod" value="TTest"/>
+                <label name="host" value="LOH070XPGH4JK77.cardinalhealth.net"/>
+                <label name="thread" value="4337@LOH070XPGH4JK77.cardinalhealth.net.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

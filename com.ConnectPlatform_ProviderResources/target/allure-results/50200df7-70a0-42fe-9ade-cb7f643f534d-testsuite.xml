@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1599157899106" stop="1599157973467" version="1.5.4" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default suite : Default test</name>
+    <title>Default suite : Default test</title>
+    <test-cases>
+        <test-case start="1599157904669" stop="1599157973216" status="passed">
+            <name>TTest</name>
+            <description>Verification of TIP workflow</description>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="Default test"/>
+                <label name="testClass" value="com.ch.tests.TIPTest"/>
+                <label name="testMethod" value="TTest"/>
+                <label name="host" value="LOH070XPGH4JK77.cardinalhealth.net"/>
+                <label name="thread" value="56026@LOH070XPGH4JK77.cardinalhealth.net.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

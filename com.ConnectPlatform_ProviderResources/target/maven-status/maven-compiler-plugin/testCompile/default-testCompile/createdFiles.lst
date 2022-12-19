@@ -1,0 +1,5 @@
+com/ch/tests/ClaimsSubmissionTest.class
+com/ch/tests/LoginTest.class
+com/ch/tests/SearchFunctionalityTest.class
+com/ch/tests/FailedCMRTest.class
+com/ch/tests/TIPTest.class

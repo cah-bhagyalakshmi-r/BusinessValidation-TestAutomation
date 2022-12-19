@@ -1,0 +1,8 @@
+com/ch/pages/LoginPage.class
+com/ch/base/TestUtilities.class
+com/ch/pages/BasePageObject.class
+com/ch/pages/ClaimsSubmissionPage.class
+com/ch/pages/DashboardPage.class
+com/ch/base/BrowserDriverFactory.class
+com/ch/pages/PatientProfilePage.class
+com/ch/base/Base.class

@@ -1,0 +1,73 @@
+{
+  "uid" : "2034a629f1850e3e",
+  "name" : "negativeLoginTest",
+  "fullName" : "com.ch.tests.LoginTest.negativeLoginTest",
+  "historyId" : "81ccb6d1a86a6f0bcce7d2cd63a250c1",
+  "time" : {
+    "start" : 1593715855450,
+    "stop" : 1593715870644,
+    "duration" : 15194
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "statusDetails" : {
+    "flaky" : false
+  },
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "host",
+    "value" : "LOH070XPGH4JK77.cardinalhealth.net"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ch.tests.LoginTest"
+  }, {
+    "name" : "testGroup",
+    "value" : "Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "negativeLoginTest"
+  }, {
+    "name" : "testSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "thread",
+    "value" : "4337@LOH070XPGH4JK77.cardinalhealth.net.main(1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ch.tests.LoginTest"
+  }, {
+    "name" : "package",
+    "value" : "com.ch.tests.LoginTest"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "statusMessage" : {
+    "present" : false
+  },
+  "source" : "2034a629f1850e3e.json",
+  "statusDetailsSafe" : {
+    "flaky" : false
+  },
+  "parameterValues" : [ ]
+}

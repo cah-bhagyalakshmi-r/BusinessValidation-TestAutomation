@@ -1,0 +1,73 @@
+{
+  "uid" : "ae9f4dc359dc67d9",
+  "name" : "SearchTestByID",
+  "fullName" : "com.ch.tests.SearchFunctionalityTest.SearchTestByID",
+  "historyId" : "c55ae86590b8db306cd9dde27482e444",
+  "time" : {
+    "start" : 1593715924441,
+    "stop" : 1593715945183,
+    "duration" : 20742
+  },
+  "description" : "Verification of Search functionality",
+  "descriptionHtml" : "<p>Verification of Search functionality</p>\n",
+  "status" : "passed",
+  "statusDetails" : {
+    "flaky" : false
+  },
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "host",
+    "value" : "LOH070XPGH4JK77.cardinalhealth.net"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ch.tests.SearchFunctionalityTest"
+  }, {
+    "name" : "testGroup",
+    "value" : "Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "SearchTestByID"
+  }, {
+    "name" : "testSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "thread",
+    "value" : "4337@LOH070XPGH4JK77.cardinalhealth.net.main(1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ch.tests.SearchFunctionalityTest"
+  }, {
+    "name" : "package",
+    "value" : "com.ch.tests.SearchFunctionalityTest"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "statusMessage" : {
+    "present" : false
+  },
+  "source" : "ae9f4dc359dc67d9.json",
+  "statusDetailsSafe" : {
+    "flaky" : false
+  },
+  "parameterValues" : [ ]
+}

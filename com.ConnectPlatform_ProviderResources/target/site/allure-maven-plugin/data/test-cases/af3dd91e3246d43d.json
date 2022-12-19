@@ -1,0 +1,73 @@
+{
+  "uid" : "af3dd91e3246d43d",
+  "name" : "FailedCMR1",
+  "fullName" : "com.ch.tests.FailedCMRTest.FailedCMR1",
+  "historyId" : "bd0d408d58f080f1019682b0bd0a31c0",
+  "time" : {
+    "start" : 1593715947210,
+    "stop" : 1593715993302,
+    "duration" : 46092
+  },
+  "description" : "Verification of Unsuccessful CMR workflow",
+  "descriptionHtml" : "<p>Verification of Unsuccessful CMR workflow</p>\n",
+  "status" : "passed",
+  "statusDetails" : {
+    "flaky" : false
+  },
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "host",
+    "value" : "LOH070XPGH4JK77.cardinalhealth.net"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "testClass",
+    "value" : "com.ch.tests.FailedCMRTest"
+  }, {
+    "name" : "testGroup",
+    "value" : "Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "FailedCMR1"
+  }, {
+    "name" : "testSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "thread",
+    "value" : "4337@LOH070XPGH4JK77.cardinalhealth.net.main(1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.ch.tests.FailedCMRTest"
+  }, {
+    "name" : "package",
+    "value" : "com.ch.tests.FailedCMRTest"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "statusMessage" : {
+    "present" : false
+  },
+  "source" : "af3dd91e3246d43d.json",
+  "statusDetailsSafe" : {
+    "flaky" : false
+  },
+  "parameterValues" : [ ]
+}

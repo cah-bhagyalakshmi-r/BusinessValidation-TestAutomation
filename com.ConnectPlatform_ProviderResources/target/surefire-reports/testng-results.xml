@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="184551" started-at="2020-07-02T14:50:36 EDT" finished-at="2020-07-02T14:53:41 EDT">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="184551" started-at="2020-07-02T14:50:36 EDT" finished-at="2020-07-02T14:53:41 EDT">
+      <class name="com.ch.tests.LoginTest">
+        <test-method status="PASS" signature="setUp(java.lang.String, org.testng.ITestContext)[pri:0, instance:com.ch.tests.LoginTest@56499781]" name="setUp" is-config="true" duration-ms="4516" started-at="2020-07-02T14:50:37 EDT" finished-at="2020-07-02T14:50:41 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@3f34edfc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="postiveLoginTest()[pri:1, instance:com.ch.tests.LoginTest@56499781]" name="postiveLoginTest" duration-ms="11707" started-at="2020-07-02T14:50:41 EDT" description="Verifying login functionality" finished-at="2020-07-02T14:50:53 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postiveLoginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.ch.tests.LoginTest@56499781]" name="tearDown" is-config="true" duration-ms="169" started-at="2020-07-02T14:50:53 EDT" finished-at="2020-07-02T14:50:53 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.String, org.testng.ITestContext)[pri:0, instance:com.ch.tests.LoginTest@56499781]" name="setUp" is-config="true" duration-ms="1775" started-at="2020-07-02T14:50:53 EDT" finished-at="2020-07-02T14:50:55 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@3f34edfc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="negativeLoginTest()[pri:2, instance:com.ch.tests.LoginTest@56499781]" name="negativeLoginTest" duration-ms="15196" started-at="2020-07-02T14:50:55 EDT" finished-at="2020-07-02T14:51:10 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- negativeLoginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.ch.tests.LoginTest@56499781]" name="tearDown" is-config="true" duration-ms="104" started-at="2020-07-02T14:51:10 EDT" finished-at="2020-07-02T14:51:10 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.ch.tests.LoginTest -->
+      <class name="com.ch.tests.FailedCMRTest">
+        <test-method status="PASS" signature="setUp(java.lang.String, org.testng.ITestContext)[pri:0, instance:com.ch.tests.FailedCMRTest@2b9ecd05]" name="setUp" is-config="true" duration-ms="1874" started-at="2020-07-02T14:52:25 EDT" finished-at="2020-07-02T14:52:27 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@3f34edfc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="FailedCMR1()[pri:0, instance:com.ch.tests.FailedCMRTest@2b9ecd05]" name="FailedCMR1" duration-ms="46095" started-at="2020-07-02T14:52:27 EDT" description="Verification of Unsuccessful CMR workflow" finished-at="2020-07-02T14:53:13 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FailedCMR1 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.ch.tests.FailedCMRTest@2b9ecd05]" name="tearDown" is-config="true" duration-ms="117" started-at="2020-07-02T14:53:13 EDT" finished-at="2020-07-02T14:53:13 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.ch.tests.FailedCMRTest -->
+      <class name="com.ch.tests.ClaimsSubmissionTest">
+        <test-method status="PASS" signature="setUp(java.lang.String, org.testng.ITestContext)[pri:0, instance:com.ch.tests.ClaimsSubmissionTest@43f99817]" name="setUp" is-config="true" duration-ms="1800" started-at="2020-07-02T14:51:10 EDT" finished-at="2020-07-02T14:51:12 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@3f34edfc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="ClaimsSubmission()[pri:0, instance:com.ch.tests.ClaimsSubmissionTest@43f99817]" name="ClaimsSubmission" duration-ms="49685" started-at="2020-07-02T14:51:12 EDT" description="Verification of Claims Submission" finished-at="2020-07-02T14:52:02 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClaimsSubmission -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.ch.tests.ClaimsSubmissionTest@43f99817]" name="tearDown" is-config="true" duration-ms="113" started-at="2020-07-02T14:52:02 EDT" finished-at="2020-07-02T14:52:02 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.ch.tests.ClaimsSubmissionTest -->
+      <class name="com.ch.tests.SearchFunctionalityTest">
+        <test-method status="PASS" signature="setUp(java.lang.String, org.testng.ITestContext)[pri:0, instance:com.ch.tests.SearchFunctionalityTest@2a2798a2]" name="setUp" is-config="true" duration-ms="2056" started-at="2020-07-02T14:52:02 EDT" finished-at="2020-07-02T14:52:04 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@3f34edfc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="SearchTestByID()[pri:0, instance:com.ch.tests.SearchFunctionalityTest@2a2798a2]" name="SearchTestByID" duration-ms="20747" started-at="2020-07-02T14:52:04 EDT" description="Verification of Search functionality" finished-at="2020-07-02T14:52:25 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchTestByID -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.ch.tests.SearchFunctionalityTest@2a2798a2]" name="tearDown" is-config="true" duration-ms="125" started-at="2020-07-02T14:52:25 EDT" finished-at="2020-07-02T14:52:25 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.ch.tests.SearchFunctionalityTest -->
+      <class name="com.ch.tests.TIPTest">
+        <test-method status="PASS" signature="setUp(java.lang.String, org.testng.ITestContext)[pri:0, instance:com.ch.tests.TIPTest@31f1b268]" name="setUp" is-config="true" duration-ms="2112" started-at="2020-07-02T14:53:13 EDT" finished-at="2020-07-02T14:53:15 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@3f34edfc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="TTest()[pri:0, instance:com.ch.tests.TIPTest@31f1b268]" name="TTest" duration-ms="25819" started-at="2020-07-02T14:53:15 EDT" description="Verification of TIP workflow" finished-at="2020-07-02T14:53:41 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.ch.tests.TIPTest@31f1b268]" name="tearDown" is-config="true" duration-ms="98" started-at="2020-07-02T14:53:41 EDT" finished-at="2020-07-02T14:53:41 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.ch.tests.TIPTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

@@ -1,0 +1,61 @@
+[ {
+  "uid" : "ae9f4dc359dc67d9",
+  "name" : "SearchTestByID",
+  "time" : {
+    "start" : 1593715924441,
+    "stop" : 1593715945183,
+    "duration" : 20742
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "863201cde4004d76",
+  "name" : "postiveLoginTest",
+  "time" : {
+    "start" : 1593715841807,
+    "stop" : 1593715853470,
+    "duration" : 11663
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "af3dd91e3246d43d",
+  "name" : "FailedCMR1",
+  "time" : {
+    "start" : 1593715947210,
+    "stop" : 1593715993302,
+    "duration" : 46092
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2034a629f1850e3e",
+  "name" : "negativeLoginTest",
+  "time" : {
+    "start" : 1593715855450,
+    "stop" : 1593715870644,
+    "duration" : 15194
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "275f9df63cdee344",
+  "name" : "TTest",
+  "time" : {
+    "start" : 1593715995547,
+    "stop" : 1593716021363,
+    "duration" : 25816
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6a8a3fb399006c4a",
+  "name" : "ClaimsSubmission",
+  "time" : {
+    "start" : 1593715872565,
+    "stop" : 1593715922247,
+    "duration" : 49682
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

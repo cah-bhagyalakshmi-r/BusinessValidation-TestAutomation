@@ -1,0 +1,49 @@
+{
+	"login": 
+	{
+		"firstname": "Test",
+		"lastname": "Automation",
+		"email": "bhagyalakshmi.r@cardinalhealth.com"
+	},
+	"search": 
+	{
+		"lastname": "Wayne",
+		"phone": "310-896-7281 ",
+		"dob": "10/10/1940",
+		"claimid": "100379802",
+		"id" : "CMR-2ccd92f8-df5d-491a-a3b2-bfb8a675c0fe",
+		"invalidsearch": "xgfdgfd"
+	},
+	"cmr": 
+	{
+		"phoneauthcode": "123456",
+		"allergy": "Aspirin",
+		"medication": "MULTIPLE VITAMIN TABLET",
+		"directions": "ONCE DAILY",
+		"condition": "ALLERGIES",
+		"prescriber": "SELF"
+	},
+	"claimssubmission":
+	{
+	    "clmsubid" : "35f1d50c-5026-488e-ad44-3ed190aaf811"
+	},
+	"tip": 
+	{
+		"medinput": "VIT",
+		"newmedinput": "LIPITOR"
+	},
+	"datageneratortip":
+	{
+		"client": "outcomes sample client 2",
+		"contract": "outcomes sample client 2 contract",
+		"policy": "outcomes sample policy 2",
+		"center": "outcomes training pharmacy #1 :9999990 : 10203",
+		"patientlastname": "Acock"
+	},
+	"database": 
+	{
+		"url": "jdbc:postgresql://localhost:7779/postgres",
+		"username": "pcdb_admin",
+		"password": "pcdb_admin"
+	}
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1596040661419" stop="1596040751130" version="1.5.4" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default suite : Default test</name>
+    <title>Default suite : Default test</title>
+    <test-cases>
+        <test-case start="1596040667514" stop="1596040718671" status="passed">
+            <name>postiveLoginTest</name>
+            <description>Verifying login functionality</description>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="Default test"/>
+                <label name="testClass" value="com.ch.tests.LoginTest"/>
+                <label name="testMethod" value="postiveLoginTest"/>
+                <label name="host" value="LOH070XPGH4JK77.cardinalhealth.net"/>
+                <label name="thread" value="42386@LOH070XPGH4JK77.cardinalhealth.net.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1596040721107" stop="1596040750902" status="passed">
+            <name>negativeLoginTest</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="Default test"/>
+                <label name="testClass" value="com.ch.tests.LoginTest"/>
+                <label name="testMethod" value="negativeLoginTest"/>
+                <label name="host" value="LOH070XPGH4JK77.cardinalhealth.net"/>
+                <label name="thread" value="42386@LOH070XPGH4JK77.cardinalhealth.net.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

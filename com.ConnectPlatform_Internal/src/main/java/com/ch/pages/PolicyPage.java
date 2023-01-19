@@ -288,7 +288,7 @@ public class PolicyPage extends TestBase {
 		Thread.sleep(5000);
 		File dir = new File(System.getProperty("user.dir") + "/src/main/java/com/ch/testdata/");
 		for (File f : dir.listFiles()) {
-			if (f.getName().startsWith("Export_")) {
+			if (f.getName().contains("Export")) {
 				f.delete();
 				Thread.sleep(3000);
 			}

@@ -136,11 +136,11 @@ public class RxEligPage extends TestBase {
 
 	public static String check_file_exist() {
 		String home = System.getProperty("user.dir") + "/src/main/java/com/ch/testdata/";
-		String file_name = "Export_.*\\csv";
+		String file_name = "Export.*\\csv";
 		String file_with_location = home + file_name;
 		//System.out.println("file location: " + home + file_name);
 		File file = new File(file_with_location);
-		if (file.getName().startsWith("Export_")) {
+		if (file.getName().startsWith("Export")) {
 			//System.out.println(file_with_location + " is present");
 			String result = "File Present";
 			return result;

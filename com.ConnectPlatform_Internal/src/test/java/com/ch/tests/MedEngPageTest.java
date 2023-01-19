@@ -135,7 +135,7 @@ public class MedEngPageTest extends TestBase {
 		commonMethods.implicitwait(defaultwaittime);
 	}
 	
-	@Test(description = "Medical Rules Engine export all Validation", priority =2, groups = {"Regression"})
+	@Test(description = "Medical Rules Engine export rule Validation", priority =5, groups = {"Regression"})
 	public void Medicalrulesengine_exportall_Validation() throws IOException, InterruptedException, ParseException
 	{	
 		internalinitialization();

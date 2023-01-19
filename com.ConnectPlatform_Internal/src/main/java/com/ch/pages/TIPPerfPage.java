@@ -215,7 +215,7 @@ public class TIPPerfPage extends TestBase {
 	
 	public static String check_file_exist() {
 		String home = System.getProperty("user.dir") + "/src/main/java/com/ch/testdata/";
-		String file_name = "Export_.*\\csv";
+		String file_name = "Export.*\\csv";
 		String file_with_location = home + file_name;
 		System.out.println("file location: " + home + file_name);
 		File file = new File(file_with_location);
@@ -235,7 +235,7 @@ public class TIPPerfPage extends TestBase {
 		Thread.sleep(5000);
 		File dir = new File(System.getProperty("user.dir") + "/src/main/java/com/ch/testdata/");
 		for (File f : dir.listFiles()) {
-			if (f.getName().startsWith("Export_")) {
+			if (f.getName().contains("Export")) {
 				f.delete();
 				Thread.sleep(3000);
 			}

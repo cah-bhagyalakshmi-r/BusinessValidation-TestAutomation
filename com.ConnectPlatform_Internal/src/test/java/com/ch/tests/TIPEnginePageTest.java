@@ -29,7 +29,8 @@ public class TIPEnginePageTest extends TestBase {
 
 	int defaultwaittime=35;
 	int normalwaittime=10;
-	String tipname;
+	public static String tipname="";
+	
 
 	public TIPEnginePageTest(){
 		super();			
@@ -44,8 +45,8 @@ public class TIPEnginePageTest extends TestBase {
 		dashboardPage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 	}
 
-	@Test(description = "Create and Edit tip Validation", priority =3, groups = {"Regression"})
-	public void tipEngine_createandedittip_Validation() throws IOException, InterruptedException, ParseException
+	@Test(description = "Create tip,Editti ,tipbuilder error Validation", priority =3, groups = {"Regression"})
+	public void tipEngine_createandedittip_tipbuildererror_Validation() throws IOException, InterruptedException, ParseException
 	{	
 		commonMethods.implicitwait(defaultwaittime);
 		tipenginePage.tipengine_click();
@@ -80,17 +81,21 @@ public class TIPEnginePageTest extends TestBase {
 	  tipenginePage.newtipdata.click();
 	  commonMethods.implicitwait(defaultwaittime);
 	  js.executeScript("window.scrollBy(0,3000)", "");
-		 
+	  commonMethods.implicitwait(defaultwaittime);
+		tipenginePage.edittip_click();
+		commonMethods.implicitwait(defaultwaittime);
+		tipenginePage.tipbuildererror_validation();
+		commonMethods.implicitwait(defaultwaittime); 
 		
 	}
 	
-	@Test(description = "TipBuilder Validation", priority =3, groups = {"Regression"})
+	//@Test(description = "TipBuilder Validation", priority =4, groups = {"Regression"})
 	public void tipEngine_tipbuildererror_Validation() throws IOException, InterruptedException, ParseException
 	{	
 		commonMethods.implicitwait(defaultwaittime);
 		tipenginePage.tipengine_click();
 		commonMethods.implicitwait(defaultwaittime);
-		tipenginePage.searchinput.sendKeys("cardinalaccnt915");
+		tipenginePage.searchinput.sendKeys(tipname);
 		commonMethods.implicitwait(defaultwaittime);
 		tipenginePage.newtipdata.click();
 		commonMethods.implicitwait(defaultwaittime);

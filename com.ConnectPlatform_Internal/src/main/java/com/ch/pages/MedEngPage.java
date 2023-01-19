@@ -243,9 +243,10 @@ public class MedEngPage extends TestBase {
 	}
 	
 	public void effdate_clear() throws InterruptedException {
+		//effectivedateinput.clear();
+		effectivedateinput.sendKeys(Keys.CONTROL + "a");
+		effectivedateinput.sendKeys(Keys.DELETE);
 		Thread.sleep(2000);
-		effectivedateinput.clear();
-		//effectivedateinput.sendKeys(Keys.chord(Keys.COMMAND,"a", Keys.DELETE));
 	}
 
 	public void addrow_click() {
@@ -435,11 +436,11 @@ public class MedEngPage extends TestBase {
 
 	public static String check_file_exist() {
 		String home = System.getProperty("user.dir") + "/src/main/java/com/ch/testdata/";
-		String file_name = "Medical_.*\\csv";
+		String file_name = "Medical.*\\csv";
 		String file_with_location = home + file_name;
 		System.out.println("file location: " + home + file_name);
 		File file = new File(file_with_location);
-		if (file.getName().startsWith("Medical_")) {
+		if (file.getName().startsWith("Medical")) {
 			//System.out.println(file_with_location + " is present");
 			String result = "File Present";
 			return result;
@@ -454,7 +455,7 @@ public class MedEngPage extends TestBase {
 	public void delete_file() throws InterruptedException {
 		File dir = new File(System.getProperty("user.dir") + "/src/main/java/com/ch/testdata/");
 		for (File f : dir.listFiles()) {
-			if (f.getName().startsWith("Medical_Rules_Global_")) {
+			if (f.getName().contains("Medica")) {
 				f.delete();
 			}
 		}
@@ -543,7 +544,7 @@ public class MedEngPage extends TestBase {
 					}
 					//To remove the header
 					lineNumberCount=lineNumberCount-1;
-					//System.out.println("Total number of lines found in csv : " + (lineNumberCount));
+					System.out.println("Total number of lines found in csv : " + (lineNumberCount));
 					String csvrec = Integer.toString(lineNumberCount);
 					
 					List<WebElement> rowcount = driver.findElements(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/section[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/table[1]/tbody[1]/tr"));
@@ -556,7 +557,7 @@ public class MedEngPage extends TestBase {
 					
 					
 					  if(lineNumberCount>0) {
-					  System.out.println("The generated csv contains records and is validated with total number of records on UI and csv");} else
+					  System.out.println("The generated csv contains records");} else
 					  { System.out.println("The generated csv does not contains records"); }
 					  linenumberreader.close();
 					 
@@ -579,7 +580,7 @@ public class MedEngPage extends TestBase {
 		System.out.println("rulename:" +existingrulename);
 		File dir = new File(System.getProperty("user.dir") + "/src/main/java/com/ch/testdata/");
 		for (File f : dir.listFiles()) {
-			if (f.getName().startsWith(existingrulename)) {
+			if (f.getName().contains(existingrulename)) {
 				f.delete();
 			}
 		}

@@ -19,6 +19,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -139,7 +140,14 @@ public class AdhPDCPage extends TestBase {
 	}
 	
 	public void downloadexcel_click() throws InterruptedException {
-		downloadtoexcel.click();
+		//downloadtoexcel.click();
+		//JavascriptExecutor executor = (JavascriptExecutor) driver;
+		//executor.executeScript("arguments[0].scrollIntoView();", downloadtoexcel);
+		//executor.executeScript("arguments[0].click();", downloadtoexcel);
+		Thread.sleep(5000);
+		Actions actions = new Actions(driver);
+		actions.moveToElement(downloadtoexcel).click().build().perform();
+		System.out.println("Download to excel button is clicked");
 		Thread.sleep(5000);
 	}
 	
@@ -172,7 +180,7 @@ public class AdhPDCPage extends TestBase {
 	public void delete_file() throws InterruptedException {
 		File dir = new File(System.getProperty("user.dir") + "/src/main/java/com/ch/testdata/");
 		for (File f : dir.listFiles()) {
-			if (f.getName().startsWith("Export_")) {
+			if (f.getName().contains("Export")) {
 				f.delete();
 			}
 		}
@@ -200,7 +208,7 @@ public class AdhPDCPage extends TestBase {
 	public int getRecordsCountInExcel_downloadtoexcel() {		
 		int lineNumberCount = 0;
 		try {
-			String downloadPath =System.getProperty("user.dir") + "/src/main/java/com/ch/testdata/";
+			String downloadPath =System.getProperty("user.dir") + "/src/main/java/com/ch/testdata";
 			File file = getLatestFilefromDir();
 		    csvFileName = file.getName();
 			System.out.println("CSV File Downloaded is :- "+csvFileName);

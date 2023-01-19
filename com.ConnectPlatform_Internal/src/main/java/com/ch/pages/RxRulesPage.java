@@ -456,7 +456,7 @@ public class RxRulesPage extends TestBase {
 
 	public void exporttoexcel_click() throws InterruptedException {
 		exporttoexcel.click();
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 	}
 	
 	public void druglookup_exporttoexcel() throws InterruptedException {
@@ -503,11 +503,11 @@ public class RxRulesPage extends TestBase {
 
 	public static String check_file_exist() {
 		String home = System.getProperty("user.dir") + "/src/main/java/com/ch/testdata/";
-		String file_name = "Medical_.*\\csv";
+		String file_name = "Medical.*\\csv";
 		String file_with_location = home + file_name;
 		System.out.println("file location: " + home + file_name);
 		File file = new File(file_with_location);
-		if (file.getName().startsWith("Medical_")) {
+		if (file.getName().startsWith("Medical")) {
 			//System.out.println(file_with_location + " is present");
 			String result = "File Present";
 			return result;
@@ -523,7 +523,7 @@ public class RxRulesPage extends TestBase {
 		Thread.sleep(5000);
 		File dir = new File(System.getProperty("user.dir") + "/src/main/java/com/ch/testdata/");
 		for (File f : dir.listFiles()) {
-			if (f.getName().startsWith("Export_")) {
+			if (f.getName().contains("Export")) {
 				f.delete();
 			}
 		}	

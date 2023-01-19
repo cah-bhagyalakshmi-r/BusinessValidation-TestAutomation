@@ -131,7 +131,7 @@ public class CMRtargetPage extends TestBase {
 		String file_with_location = home + file_name;
 		//System.out.println("file location: " + home + file_name);
 		File file = new File(file_with_location);
-		if (file.getName().startsWith("Export_")) {
+		if (file.getName().startsWith("Export")) {
 			//System.out.println(file_with_location + " is present");
 			String result = "File Present";
 			return result;
@@ -146,7 +146,7 @@ public class CMRtargetPage extends TestBase {
 	 public void delete_file() {
 		 File dir = new File(System.getProperty("user.dir") + "/src/main/java/com/ch/testdata/");
 		 for (File f : dir.listFiles()) {
-			    if (f.getName().startsWith("Export_")) {
+			    if (f.getName().startsWith("Export")) {
 			        f.delete();
 			    }
 			}

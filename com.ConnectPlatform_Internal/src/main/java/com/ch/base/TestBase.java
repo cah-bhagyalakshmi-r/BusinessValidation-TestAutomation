@@ -57,8 +57,8 @@ public class TestBase {
 			prefs.put("profile.password_manager_enabled", false);
 			prefs.put("plugins.plugins_disabled", new String[] { "Chrome PDF Viewer" });
 			prefs.put("plugins.always_open_pdf_externally", true);
-			prefs.put("profile.default_content_settings.popups", 0);
-			prefs.put("download.prompt_for_download", "false");
+			//prefs.put("profile.default_content_settings.popups", 0);
+			//prefs.put("download.prompt_for_download", "false");
 			prefs.put("download.default_directory", System.getProperty("user.dir") + "/src/main/java/com/ch/testdata"); 
 			ChromeOptions options = new ChromeOptions();
 			options.setExperimentalOption("prefs", prefs);

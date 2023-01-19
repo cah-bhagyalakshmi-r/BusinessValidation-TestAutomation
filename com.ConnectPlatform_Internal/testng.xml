@@ -5,20 +5,22 @@
  <listeners>
  <listener class-name="com.ch.ExtentReport.ExtentReporter"/>  
  </listeners>
-  <test name="Connect Platform Internal Business Validation Test"> 
+  <test name="Connect Platform Internal Business Validation Test">
     <classes>
       <class name="com.ch.tests.CMRtargetPageTest"/>
       <class name="com.ch.tests.DxEngPageTest"/>
       <class name="com.ch.tests.MedEngPageTest"/>
       <class name="com.ch.tests.TIPPerfPageTest"/>    
-      <class name="com.ch.tests.RxEnginePageTest"/>
+     <class name="com.ch.tests.RxEnginePageTest"/>
       <class name="com.ch.tests.ResncodePageTest"/>
-      <class name="com.ch.tests.AdhPDCPageTest"/>
+     <class name="com.ch.tests.AdhPDCPageTest"/>
       <class name="com.ch.tests.TIPEnginePageTest"/>
       <class name="com.ch.tests.PolicyPageTest"/>
       <class name="com.ch.tests.NINPageTest"/>
       <class name="com.ch.tests.RefusalPageTest"/>
-      <class name="com.ch.tests.RxEligPageTest"/>
+     <class name="com.ch.tests.RxEligPageTest"/>
     </classes>
+
   </test> <!-- Test -->
+
 </suite> <!-- Suite -->

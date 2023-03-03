@@ -53,9 +53,11 @@ public class TIPPerfPageTest extends TestBase {
 		commonMethods.implicitwait(defaultwaittime);
 		tipperformancePage.tipperformancecolumn_display();
 		commonMethods.implicitwait(defaultwaittime);
+		tipperformancePage.reccount_validation();
+		commonMethods.implicitwait(defaultwaittime);
 		tipperformancePage.downloadtoexcel_click();
 		System.out.println("Summary tab download to excel link is clicked");
-		commonMethods.implicitwait(defaultwaittime);
+		commonMethods.implicitwait(defaultwaittime);		
 		tipperformancePage.getRecordsCountInCSV_exporttoexcel();
 		System.out.println("Summary tab results are validated");
 		commonMethods.implicitwait(defaultwaittime);

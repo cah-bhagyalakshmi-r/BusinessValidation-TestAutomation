@@ -305,6 +305,25 @@ public class TIPPerfPage extends TestBase {
 		return lineNumberCount;
 	}
 	
+	public void reccount_validation() {
+        String result= resultset.getText();
+        System.out.println("Result set:" +result);
+        String[] parts = result.split(" ");
+        String resultnumber = parts[5];
+        String resultids = resultnumber.replaceAll(",","");
+        int reccount= Integer.parseInt(resultids);
+        int chkreccount =1;
+        System.out.println(reccount);
+        if(reccount > 0) {
+               System.out.println("The record count is greater than 0 and further validation can be done");      
+        }
+        else {
+               System.out.println("The record count is not greater than 0 and further validation needs to be manually tested to confirm if its a issue");
+               Assert.assertEquals(reccount, chkreccount);
+        }
+ }
+
+	
 	public int getRecordsCountInCSV_exporttoexcel1() {		
 		int lineNumberCount = 0;
 		try {

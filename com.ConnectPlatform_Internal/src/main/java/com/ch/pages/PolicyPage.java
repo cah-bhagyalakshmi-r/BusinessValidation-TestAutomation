@@ -248,7 +248,7 @@ public class PolicyPage extends TestBase {
 	}
 	
 	public void searchtip_input() {
-		searchtipinput.sendKeys("548");
+		searchtipinput.sendKeys("1725");
 	}
 	
 	public void nin_check() {

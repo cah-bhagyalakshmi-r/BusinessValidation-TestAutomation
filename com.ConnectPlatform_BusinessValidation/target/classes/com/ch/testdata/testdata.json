@@ -1,0 +1,77 @@
+{
+	"login": 
+	{
+		"firstname": "Test",
+		"lastname": "Automation",
+		"email": "bhagyalakshmi.r@cardinalhealth.com"
+	},
+	"search": 
+	{
+		"lastname": "Gorthy",
+		"phone": "281-414-0571 ",
+		"dob": "08/04/1973",
+		"claimid": "100379637",
+		"id" : "CMR-944beaed-af17-4daa-97a8-a28d2c708747",
+		"invalidsearch": "xgfdgfd"
+	},
+	"cmr": 
+	{
+		"phoneauthcode": "123456",
+		"allergy": "Aspirin",
+		"medication": "MULTIPLE VITAMIN TABLET",
+		"directions": "TAKE 1 CAPSULE BY MOUTH ONCE DAILY",
+		"condition": "ALLERGIES",
+		"prescriber": "SELF",
+		"patientid": "MTM0136",
+		"patientid1": "MTM0054"
+	},
+	"claimssubmission":
+	{
+	    "clmsubid" : "35f1d50c-5026-488e-ad44-3ed190aaf811"
+	},
+	"tip": 
+	{
+		"medinput": "VIT",
+		"newmedinput": "LIPITOR",
+		"newmedimmunizationinput": "FLUARIX",
+		"deleteadherenceneedsstatintipquery": "Delete from outcomes.dbo.TIPresult where patientid=21 and TIPdetailid=548",
+		"deleteadherenceneedscheckintipquery": "Delete from outcomes.dbo.TIPresult where patientid=21 and TIPdetailid=552",
+		"deleteadherencemonitoringdppivtipquery": "Delete from outcomes.dbo.TIPresult where patientid=21 and TIPdetailid=512",
+		"deleteneedsdiseasestatetipquery": "Delete from outcomes.dbo.TIPresult where patientid=74 and TIPdetailid=2138",
+		"deleteneedsdrugtherapytipquery": "Delete from outcomes.dbo.TIPresult where patientid=21 and TIPdetailid=246",
+		"deleteneedsrefilltipquery": "Delete from outcomes.dbo.TIPresult where patientid=21 and TIPdetailid=2043",
+		"deleteneedsimmunizationtipquery": "Delete from outcomes.dbo.TIPresult where patientid=21 and TIPdetailid=1956",
+		"deleteneedspatienteducationtipquery": "Delete from outcomes.dbo.TIPresult where patientid=21 and TIPdetailid=1697",
+		"deleteadherenceneedsstatintipquery1": "Delete from outcomes.dbo.TIPresult where patientid=190 and TIPdetailid=548",
+		"deleteadherenceneedsstatinclaimquery": "Update outcomes.dbo.claim set statusid = 3 where patientid=21 and TIPdetailid=548",
+		"deleteadherenceneedscheckinclaimquery": "Update outcomes.dbo.claim set statusid = 3 where patientid=21 and TIPdetailid=552",
+		"deleteadherencemonitoringdppivclaimquery": "Update outcomes.dbo.claim set statusid = 3 where patientid=21 and TIPdetailid=512",
+		"deleteneedsdiseasestatetclaimquery": "Update outcomes.dbo.claim set statusid = 3 where patientid=74 and TIPdetailid=2138",
+		"deleteneedsdrugtherapyclaimquery": "Update outcomes.dbo.claim set statusid = 3 where patientid=21 and TIPdetailid=246",
+		"deleteneedsrefillclaimquery": "Update outcomes.dbo.claim set statusid = 3 where patientid=21 and TIPdetailid=2043",
+		"deleteneedsimmunizationclaimquery": "Update outcomes.dbo.claim set statusid = 3 where patientid=21 and TIPdetailid=1956",
+		"deleteneedspatienteducationclaimquery": "Update outcomes.dbo.claim set statusid = 3 where patientid=21 and TIPdetailid=1697",
+		"deleteadherenceneedsstatinclaimquery1": "Update outcomes.dbo.claim set statusid = 3 where patientid=190 and TIPdetailid=548",
+		"tippatientid": "74",
+		"tipdetailid": "2138"
+	},
+	"datageneratortip":
+	{
+		"client": "outcomes sample client 2",
+		"contract": "outcomes sample client 2 contract",
+		"policy": "outcomes sample policy 2",
+		"center": "outcomes training pharmacy #1 :9999990 : 10203",
+		"patientlastname": "Acock"
+	},
+	"database": 
+	{
+		"username": "fuse\bhagyalakshmi.r",
+		"password": "Vedprekshith@2020",
+		"username1": "TurtleTeam_DevAutomation",
+		"password1": "2HS<CH$C,c22q8k6.j?Mje"
+	},
+	"patientnotes":
+	{
+		"addingnote": "AutomationTesting"
+	}
+}
